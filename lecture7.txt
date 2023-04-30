@@ -1,0 +1,203 @@
+
+Software Testing
+
+Regression Testing
+	compare output of previous tests with those from new codebase
+	make sure today's fixes don't break something else
+	can run regression tests for component function, performance and whole system functionality
+
+Test Data
+	typical data, real world data may reveal surprises about requirements
+	synthetic data, created artificially but may need to satisfy certain properties
+	real world and synthetic together can expose different types of bugs
+
+Test thoroughly
+	good test coverage
+	as well as state coverage
+
+4 quadrants of tests
+	business facing or tech facing
+	supporting the team or critiquing the product
+
+	Tech facing, supporting development
+		unit tests, component tests
+		written and maintained by developers only
+		easier to automate
+	
+	Business facing, supporting development
+		testing done by customer - acceptance tests
+		written by users before development starts
+		answers the question are we done?
+		and did users get what they wanted?
+
+	Business facing, critiquing product
+		exploratory, usability and acceptance, alpha/beta
+		check specification is correct
+		finding room for improvement
+		users try to break or find better ways to use
+		showcases to check understanding
+		
+	Tech facing, critiquing
+		performance/load tests, security
+		capacity, usability and scalability
+	
+Why do we live with bugs
+	how could you even prove code has no bugs
+	could cost too much
+	bugs expensive but eliminating them is expensive too
+		makes a certain amount of bugs optimal economically
+
+When to fix
+	cheaper to fix soon after writing - small bugs can grow to huge issues that may be hard to find
+	continuous testing
+
+Who should test
+	very frequent testing means programmers would write the tests and find bugs
+		but we need a new perspective to catch more bugs
+		buddy programming
+	most developers hate testing
+		and tend to avoid weak parts subconsiously
+	no one likes testing -> automate
+		but we still need to define the test cases and conditions
+		hard to simulate unexpected user input
+
+Many tools
+	selenium, KIF, xUnit
+	static code analysis
+
+	profiling tools to check performance
+	especially memory allocation
+	and finding bottlenecks
+
+analytics
+	collect data to help improve marketisation
+	can report usage patterns to direct development
+
+
+AGILE
+
+Lightweight methods
+	mid 90s reaction against one cycle regulated methods
+	scrum etc
+	preceeded by extreme programming
+	kent beck developed it to improve crysler development processes
+
+XP
+	everything changes
+	problem isnt change but inability to accept it
+	improve responsiveness to reduce cost of change
+	agile development framework and philosphy
+	stay aware, adapt, change
+	driving metaphor - users steer the content, team steers the project
+
+	also made up of practices and values
+	principles bridge gap between values and practices
+
+XP Values
+	communication
+	simplicity
+	feedback
+	courage
+	respect
+
+Principles
+	ok to fail
+	baby steps - easier
+	accepted responsibility
+	redundancy - many systems to solve hard problems
+	flow - steady flow of features - no big chunks
+	opportunity - problems are opportunities for change
+
+	Humanity
+
+Practices
+	sit together
+	involve whole team
+	informative workspace - can understand process and product by being in the space
+	energised work - prepared, rested, relaxed - not burnt out
+	pair programming
+	all about people
+
+	stories - move from requirements to functionality stories and effort estimate
+	weekly cycle and quarterly planning
+
+	build & test must be quicker than 10 mins - stress reliever
+	continuous integration
+	test first programming - write tests first
+	incremental design - constantly update design plan
+
+	customer involvement
+	incremental deployment - no big point of failure
+	team continuity
+
+Agile manifesto
+	evolution of extreme programming
+	
+more variants
+	test driven development and evolving into behaviour driven development
+	refactoring
+	better incremental feedback
+		lean startup
+	agile product management
+
+CI
+
+integrating new changes could cause unpredictable changes
+integrate and test changes frequently - every few hours
+check in changes, build, test and only then proceed
+
+source repo
+	big effort to track files and changes
+	can reconstruct project as it was at any point in time
+	helps develop and merge branches
+	
+automated build
+	big effort to build manually and can introduce errors
+
+agreement of team
+
+
+CI Key practices
+	single source repo
+	automated build
+	self testing
+	commit to mainline every day
+	fast builds
+	test in clone of prod environment
+	make it easy for everyone to access everything
+	automated deployment
+
+CI Software
+	Jenkins
+	CircleCI
+	execute the workflow and provide visibility into it
+
+
+CD
+	traditional process - identify candiates, check if all is ok etc
+	alpha, beta, release candidate and then release
+	lots of work
+
+	CD - build software that is always release ready
+	pipeline constantly checking if software is ok to release
+
+Deployment pipeline
+	CI only applies to dev teams - need more
+	1. build, run tests, assemble and store
+	2. automated acceptance tests
+	3. pipeline deploys into different environments for final manual testing and then deploys
+
+benefits
+	more frequent feedback
+	fast feature releases
+	closer to users and can quickly fix problems
+	more reliable and stable
+	saves time
+
+costs
+	collaboration between teams needed
+	investment in automation
+	effort required to deploy often
+
+	need to figure out if its worth it
+

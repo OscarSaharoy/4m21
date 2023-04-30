@@ -1,0 +1,131 @@
+
+OO Programming Analysis and Design
+
+we neve know where we are going when we set out on a software engineering program
+started in code but can also be applied to any design/architecture task
+
+1960s-1970s
+	structured programming
+	based on
+		sequencing
+		selection
+		iteration
+	goto considered harmful
+
+1967
+	Objects first appeared in simula'67
+	helped people communicate about code
+
+1980
+	smalltalk 80
+	everything is an object
+
+OO
+	method of implementation where programs are organised as cooperative collections of objects
+	
+OO design	
+	design encompassing process of OO decomposition
+
+OO analysis
+	examining requirements from the perspective of the classes and objects found in the vocab of the problem domain
+
+Abstraction
+	general/not based on real situations
+	dealing with ideas rather than events
+
+	dealing with ideas
+	generalisation
+		to focus on what matters
+		to make things simpler
+		to make complexity manageable
+
+	eg a floor plan
+	helps evaluate a space
+		renders ommisions and contradictions obvious
+	although software has no real geometric form
+
+	OO design makes meaningful abstraction easy
+
+	abstractions define key characteristics and behaviours
+	classifications expose commonality between objects
+
+Class
+	key concept within the system
+	encapsulates data and behaviour
+
+	need to decide
+		what classes we need
+		what they will do
+
+Object
+	instance of a class
+	data is state
+	given the same data, different objects will behave the same
+
+Encapsulation
+	classes provide abstractions
+	object can be used without knowing how it works
+	expose only what something can do and not how
+	can also improve internals of the object without changing how user interacts with it
+
+Data hiding
+	public access
+	request: display last name first in france
+	can make both first name and last name and then user decides how to display
+		complexity increases with scale of use
+	can instead keep names private and expose a method
+		prevents accidental change
+		simpler
+		shields user from complexity
+	
+	abstract away implementation
+	decouple software, reducing dependencies
+	grow software easier
+	debug easier
+	can examine software from different levels
+	simpler
+
+Getters and Setters
+	can hide implementation details that may change
+	can implement constraints checking
+	control concurrent access
+
+Class Reuse
+	not really possible
+	data and behaviour will be different between systems even for similar classes
+	using a general class would add extra complexity that isn't needed for specific use case
+
+Inheritance
+	superclasses aka base class can be extended
+	subclass aka derived class inherits from parent
+
+		shape -.
+			   |-> triangle
+			   |-> circle
+
+	each subclass can hold all the data and perform all the actions of the parent
+	the subclass can also hold additional data, perform new actions or perform existing actions in a different way
+
+Polymorphism
+	inheritance hierarchy allows us to choose the level of abstraction at which we interact with the object
+	can expose a common interface into different functionalities on different objects
+	improves extensibility
+
+Identifying good key classes
+	not simple
+
+	inheritance: IS A relationship
+		circle IS A shape
+	
+	different data does not require different class
+
+Abstract Classes
+	a class with no instances
+	generic
+	blueprint for subclasses
+
+Purely Abstract Class
+	defines behaviour but no data
+	aka interface
+	defines how to interact with an object
+	often can only inherit from one class but can implement many interfaces

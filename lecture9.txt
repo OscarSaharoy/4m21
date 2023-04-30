@@ -1,0 +1,144 @@
+
+human computer interface
+
+computers are tools
+
+humans are very complex
+	some of our abilities are well understood and can be controlled
+	some arent well understood
+
+everyone has differences and different experiences
+	need to account for these in HCI
+	good design requries empathy
+
+computers are complex
+	hard to design for this complexity
+
+need to understand the system
+	take into accout full socio economic context
+	need to integrate design into full system
+
+design is hard
+	no perfect design - always tradeoffs
+	need to specify problem well - easy to introduce bad requirements early in process
+
+HCI requires a unique comination of skills that arent lectured
+	software hardware analytical skills and user research skills
+
+empirical problems
+	use accounts of phenomena when understanding is lacking
+conceptual problems
+	connect concepts using theory
+constructive problems
+
+
+HCI practicioners
+	understand users and interactions
+		behavioural science
+	evaluate systems
+	communicate with stakeholders
+
+fundamentals
+	user interacts
+
+human centered
+	need to understand and engage with users
+	ethical considerations of systems
+
+	systems should match people not other way around
+	create systems that make things better for people
+
+pragmatic - utility
+hedonic - pleasure
+self determination - users need self determination, autonomy, competance and relatedness
+multiple resources - tasks compete for attention
+fitts law - speed accuracy tradeoff
+social info processing theory - users adapt social behaviour to account for lack of social cues in computer mediated communication
+
+Interaction
+	system adapts to user, user adapts to system
+
+UIs
+	command line -> gui
+
+Design
+	change the world by designing HCIs
+	envision things as they could be
+
+Engineering
+	technical knowhow
+	emergent qualities eg performance, safety, robustness
+	use theory and practice
+
+Evaluation
+	verification and validation (check requirements) and testing
+
+	use multiple methods
+
+	then feedback -> iterative design
+
+interactive systems are difficult to use
+	normal people couldnt use it
+
+	frustrations using the computer dissuaded people from using the systems
+	even worse for old/disabled people or those from other cultures
+
+	even doors are hard to use
+
+egocentric fallacy
+	not all people are like us
+	intuition can only go so far and is often misleading
+
+being human centered is the right thing to do
+	Dieter Rams: “Indifference towards people and the reality they live in is the one and only cardinal sin in design”
+
+HCI has huge financial value
+	several fold returns in investments in HCI
+
+HCI can change the future
+	discover new ways to use products and enjoy new services
+	market pull or tech push
+
+Principles
+	foundational ideas to explain
+	eg direct manipulation
+		The principle states that computational objects must be presented on a
+		display and acted on by the user through direct, reversible, and incremental
+		actions with immediate feedback
+	
+pluralism of methods
+	many different approaches, all needed to build the best system
+
+essential insights from research
+
+many of the most successful systems come from HCI research
+	and many HCI problems have answers
+	but not always the answer
+
+understanding people
+	ethnography of system admins
+	looked into sysadmins work
+	existing systems were so opaque that sysadmins wasted time troubleshooting and duplicating work making custom scripts
+
+supple++
+	callibration task and then reengineer UI to user's needs
+
+value sensitive AI
+	currently we use algorithm centric process
+	can we fit algorithms into wider context to uphold values
+
+alice and bob cant encrypt
+	PGP too hard to use
+	UI principles insufficent to ensure usable security
+
+AAC App
+	released on app store and got feedback through the app
+	accessed users across the world
+	reached users that were hard to interact with otherwise
+
+computing is powerful
+UIs control and tame it
+HCI is concerned with people, understanding interaction and benefits to users
+you are not the user
+HCI offers disciplined approach to hard problems in design
+

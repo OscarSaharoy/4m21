@@ -1,0 +1,217 @@
+
+engineering
+
+building any system is hard
+interactive even harder
+engineering methods tackle it efficiently
+
+need to build the right thing
+	need solution neutral problem statement
+	understand requirements
+	are validated and verified
+	need to understand the whole system
+	need to keep people sage
+	can follow formal systematic approaches
+
+systems are pervasive
+	theyre everywhere
+	even a doorhandle is a complex series of systems
+	everywhere in our lives
+	even we are a system
+
+properties of systems
+	anything can be a system
+	to be interesting it has to have properties that matter and complexity
+	they operate at multiple levels of abstraction
+	they are often coupled and depend on other systems
+	interesting systems have emergent properties
+		more than the sum of its parts
+	
+interactive systems
+	takes input from human and interacts with context then is processed and gives output
+
+they are embedded in wider systems
+	how can surgeons interact with systems and get info without touching anything
+		touchless is only 1 thing
+		also need to understand collaborative nature of surgery
+		hard to implement without false positives of other motions
+	need to understand the wider system too
+
+systems approach
+	comes from recognition that nontrivial problems require cross disciplinary and cross hierarchical thinking
+	need to consider lots of interacting systems
+
+	principles
+		understand the purpose
+			what are we trying to do and what does it mean
+			cost performance timeline & risk
+		think hollistically
+			systems are bounded, figure out the boundary and only worry about what is inside
+		systematic procedure
+		be creative
+			combine conventional and unconventional
+		account for the people in the process
+		manage the product and relationship
+
+	skeptical
+		lack of system approach can be traced to the failure of many projects
+
+	system mapping
+		create maps of the system
+		create a system boundary
+		to figure out what we care about
+		boundary changes depending on concerns
+
+		task diagram
+			hierarchical
+			nodes are tasks linked by processes
+
+		information diagram
+			documents are nodes and links are relationships
+
+		org diagram
+			tree hierarchy
+			can help understand relationships between people and teams
+
+		system diagram
+			shows flow of data through the process
+			and below a state diagram/flow chart
+			shows data driven processes
+
+		swimlane
+			shows processes
+			lanes are the different stakeholders
+			flow shows processes and involvement of different stakeholders
+
+		communication diagrams
+			show who communicates with who
+			shows flow of information
+
+		can use the diagrams to map out a system and do design support
+		shows us how to start designing
+
+	prinicpals for legal and ethical systems
+		illegal means prosecution
+		unethical means you lose reputation
+		ethical issues relate to norms, what is acceptable or not
+		communities have ethics codes and professional conduct guidelines
+		unethical usage of user data and experimentation
+
+	prinicpals for AI systems
+		privacy
+		accountability
+		safety and security
+		transparency and explainability
+		fairness and non discrimination
+		human control opt out 
+		professional responsibility
+		promotion of human values
+
+	is it actionable
+		what do you do after mapping
+		doesnt really tell you what to do
+		how do you know youre aware of every part of the systems
+		analysis paralysis
+			consider so many things that you cant even make progress
+	
+	design engineering
+		systematic approach
+		5 challenges
+			design fixation
+			tradeoffs
+			communication
+			integration
+			risk management
+
+		identify process
+		requirements
+		conceptual design
+		embodiment design and detailed design
+		verification and validation
+
+		identifying purpose
+			need solution neutral problem statement
+			remove requirements and constraints
+			move quantatative statements to qualatative statements
+			raise level of abstraction to increase search space and enable divergent thinking
+
+		find the correct abstraction level
+			needs professional judgement
+
+		figure out requirements
+			technical
+			business
+			regulatory
+			user
+		want a complete requirements specification
+			each needs to be
+				solution independent
+				clear
+				concise
+				testable
+				traceable
+
+		conceptual design
+			generate concepts
+			based on functions
+			what is a function
+				a solution neutral description of what a system needs to do
+			function carrier
+				something that specifies how a system might carry out a function
+
+		function modelling
+			overall function with incoming inputs and outputs
+			that cen be decomposed into lower level functions
+
+		function analysis systems technique
+			maps higher order functions and their lower level functions
+			horizontal axis is abstraction
+			vertical axis is time
+
+		generating concepts
+			list functions
+			and map them to candidate solutions
+
+			then evaluate the solutions
+			score solutions on criteria and weight by importance
+
+		verification
+			
+		safety and risk
+			mistake
+				wrong intention
+			slip
+				right intention but failed in execution
+
+			both come from lack of knowledge
+
+		skills, rules and knowledge
+			skill based
+				not much conscious control
+			rule based
+				based on stored/learned rules
+			knowledge based
+				have to think and plan
+
+			signals
+				low level control signals
+			sign
+				has to be recognised and acted on
+			symbol
+				has to be understood and reasoned about and a plan formed
+
+			error comes from a failure in processing of one of these
+	
+		risk
+			likelihood * impact
+			comes from a hazard
+			can design away many hazards
+
+		risk management
+			identify hazard
+			estimate the risk
+			evaluate the risk
+			control the risk/mitigate
+			monitor the risk
+
+

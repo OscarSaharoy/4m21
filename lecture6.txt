@@ -1,0 +1,114 @@
+
+Software Life Cycle
+	analysis
+		discovering and describing the aspects of development about which there is no choice
+	design
+		creating a definition of how the project goals are going to be acheived
+	implementation
+		the process of writing code, typically partitioned into many subproblems
+	building
+		creating a complete version of the software - putting all the chunks together, including and custom configurations
+	testing
+		make sure small parts of the code works - unit tests
+		all code works together - integration tests
+		that requirements are met - acceptance tests
+	deployment
+
+	maintenance
+		eg compatibility updates for new OS versions etc
+		80-90% of cost of ownership is in maintenance
+		maintenance and new development are becoming amalgamated
+
+requirements analysis
+	hardest part
+	impossible to know in advance what is required to build the system
+	users don't know 100% what it should do
+	developers don't know 100% how it would be used
+	only 100% certainty is that things will change eg deployment environment, business requirements, or scale
+
+known knowns
+	meeting requirements
+known unknowns
+	adapting to change
+and also unknown unknowns
+	withstand unexpected cases
+
+no silver bullet
+grow, don't build
+
+
+traditional model - waterfall
+
+	sequential
+
+	analysis
+		design
+			implementation
+				testing
+					deployment
+						maintenance
+	
+	traditional team
+		architect
+		project manager
+		lead programmer
+		programmer
+		tester
+
+	traditional tools
+		gantt charts
+	
+	advantages
+		early clarification
+		can charge for changes to requirements
+		works well with mangagement tools
+		good for safety critical systems
+		viable if it is really possible to define requirements at the start
+
+	disadvantages
+		iterations are critical to software development
+		lot of time spent on system specification
+		getting it absolutely right from the beginning may not be vital and not possible or worth it
+
+
+Spiral Model
+	can manage risk and handle unknown risks after project has started
+	handling adverse situations easier with prototypes
+	each spiral is a phase and number of phases can be varied
+	iterative development
+	incremental improvement
+	keep including feedback for improvements
+
+Evolutionary Model
+	iterative
+		feedback often from users
+	incremental
+		development consists of smaller waterfalls
+	
+	disadvantages
+		some systems cannot be partitioned into smaller iterations
+
+	many modern systems evolve daily and automated testing made this possible and enabled a lightweight software development methodology
+
+Testing
+	bugs
+	bugs destroy trust - can't trust your team if there are defects/bugs
+	testing is double checking
+	unit test
+		check a small unit of code seperate from other units of the application
+		foundation of other types of testing
+	integration testing
+		test interactions between components
+	validation tests
+		make sure user's needs are met
+	test realworld conditions
+		running out of memory/disk space
+		does it fail gracefully
+	performance testing
+		increasing the number of users to check scalability
+		might need to simulate load relistically
+	usability testing
+		does it work with real users
+		is it intuitively clear how to use
+		failure is as bad as any other testing failure
+	need to test tests?

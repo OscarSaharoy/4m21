@@ -1,0 +1,167 @@
+
+engineering
+
+risk
+	likelihood * impact
+	risk requires a hazard
+
+risk management
+	5 aspects
+		identify hazard
+		estimate the risk
+		evaluate the risk
+			risk is unavoidable
+			decide acceptable risk level
+		risk control
+		risk monitoring
+	
+risk assessment
+	system mapping
+	set system boundary
+	risk assessment dimensions
+		how in depth they are
+		focus on identifing risk
+		focus on communicating risk
+	
+	SWIFT
+		structured what if technique
+		quick but not comprehesive
+		ask what if and think about consequences
+		and try to identify hazards
+		indicate controls and rank risk
+		next steps - action notes
+
+	failure mode and effects analysis FMEA
+		go through all components
+		as a team
+		think about all failure modes
+		will take a long time
+		comprehensive
+		estimate risk and think of mitigations
+
+	fault tree
+		root cause analysis
+		logical connectors from faults to causes (events)
+		and try to minimise probability of those events
+		can be used to figure out what went wrong
+
+	risk matrix
+		impact and likelihood on 2d axes
+		helps to visualise risks
+	
+software
+	most interactive systems rely on software
+	graphical layouts must be clear
+	event driven programming
+	and design patterns
+	low latency user interfaces
+	distributed user interfaces - fluid across multiple displays
+	toolkits
+		unity and MVC
+		help to develop sophisticated UIs
+
+end user development
+	macro - combine many operations into 1
+	very limited
+	need to plan ahead
+	low level
+
+	programming by example
+	detect repetetive tasks and try to automate
+
+	eg. Eager
+	mixed initiative interface
+		checks with the user if it has the right idea
+	
+formal methods
+	state diagrams
+	use them to model software
+
+	eg undo
+
+
+UIs
+
+heuristic evaluation
+	rules of thumb for evaluating
+	check for breaches against rules
+	done by a group but seperate to avoid bias
+
+	eg can check against neilsens heuristics
+	its cheap - no users or experiments
+
+	scanning
+		scan the system looking for breaches
+	task based
+		write down all the users tasks and go through them looking for breaches
+
+	can consider all heuristics at once or one at a time
+		all at once - miss some
+		one at a time - report too many
+	
+	reporting
+		frequency
+		severity rating
+		persistence
+			can work around?
+		cause
+		redesign suggestion
+
+	works well
+	use several evaluators to miss less
+
+	benefits
+		high efficiency
+
+	drawbacks
+		limited scope - visible only
+		can miss things / false positives
+		no guaruntees
+		variability
+	
+	bernoulli trial
+
+KLM
+	map time taken to make certain movements
+	can show if things are taking too long
+
+GOMS
+	model for users
+
+KLM GOMS
+	predicts task completion times
+	basic model
+
+	has a few predetermined operators that define time taken
+	can also add your own
+	add up operators needed to complete a task
+
+	define high level activity goals
+	define subroutines to acheive them
+	review them
+
+experiments
+	can establish link between different variables
+	need to consider all aspects of experiment which can confuse conclusions
+
+	research question
+		can be emprical or constructive or conceptual
+		avoid questions that dont matter or just affirm what we know
+		and should enable explanations of phenomena
+		turn it into a testable hypothesis
+
+	
+	asymmetrical skill transfer
+		can make drawing correct conclusions impossible
+		eg pen typing
+	
+	internal and external validity
+		internal
+			measured changes solely due to our manipulation
+		external
+			experiment findings are applicable to real world
+
+		hard to get both
+	
+other evalation methods
+	think aloud	- get people to speak their thoughts

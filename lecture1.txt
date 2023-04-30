@@ -1,0 +1,77 @@
+
+Elena Punskaya
+8 lectures on software engineering and design
+
+Per Ola Kristensson
+8 lectures on human computer interaction
+
+
+Concepts Behind Software Design
+
+Definitions
+	Software
+		collection of computer programs and data that tell a computer what to do and how
+
+	Engineering
+		the way something has been desgined and built
+
+	Software Engineering
+		methods, techniques and tools that could be applied to design, build and maintain software
+
+What is a computer
+	everything
+
+
+Software Types
+	app - consumer software
+	in car software - OS, platform for car apps
+	application server - distributed concurrent software system
+	GPS chip - embedded software
+	Navigation satellite - system control software
+
+London Ambulance Dispatch System Rollout
+	1991-1992
+	didn't consult any users
+	monolithic design, build and rollout, rather than automating small parts one at a time
+	few hours after rollout, lost track of ambulance status, calls got lost, clogged up - memory leaks, shut down after 6 days
+	46 deaths
+	important case study & example
+
+Therac 25
+	overdosed people with radiation
+	error without info, caused repeated dosage
+
+
+"Software entities are more complex for their size than perhaps any
+other human construct... Many of the classical problems of
+developing software products derive from this essential complexity
+and its nonlinear increases with size."
+	Fred Brooks, “No Silver Bullet – Essence and Accident in Software Engineering”
+
+Unprecedented Scale and Complexity
+	2 trillion – web requests served daily by Akamai CDN
+
+Impossible to know in advnace everything needed
+	users don't know what they want
+	developers don't know how users will use it
+	only thing we know is that things will change
+
+
+	There are known knowns; there are things we know we know.
+	We also know there are known unknowns; that is to say we
+	know there are some things we do not know.
+	But there are also unknown unknowns – there are things we
+	do not know we don't know.
+		Former United States Secretary of Defense Donald Rumsfeld
+
+Make Better Mistakes Tomrrow
+Have Happy (Alive) Users
+No Silver Bullet
+Build For Change
+Communicate Clearly
+Test Continuously, Test Everything
+Choose The Tools For The Job
+
+In short, software is eating the world...
+	2011, Marc Andreessen
+

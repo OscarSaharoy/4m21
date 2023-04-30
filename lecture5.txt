@@ -1,0 +1,115 @@
+
+4m21 lecture 4 - design patterns
+
+design patterns are architectural structures that solve a given problem
+
+notification on event - Observer
+undo - memento and command
+access all elements sequentially - iterator
+display and manipulate data - MVC
+
+structure of patterns
+	motivation - functionality
+	solution options - explore some ways to solve
+	optimal solution - present a preffered solution
+	code example - example of how it looks
+	design pattern - discuss and show in uml
+	disadvantages
+
+composite pattern
+	want to operate on induvidual items and groups of items in a common way
+
+Shape
+---
+-group_id: int
+---
++draw()
++move
+
+very simple but cannot support nested groups
+better to introduce ShapeGroup as subclass of Shape
+
+ShapeGroup
+---
++draw()
++move()
++add_shape()
++remove_shape()
+
+
+Composite Pattern
+	group of shapes works as a shape
+	can be drawn or moved
+	leaf is shape
+	composite is shapegroup
+	can treat leaf and composite the same
+	but needs client code maybe to differentiate between composite and leaf
+
+Decorator
+	add functionality without changing original class
+
+	eg want to add frames to shapes
+
+	can add attribute to shapes
+	-frame_type: int
+	clumsy since draw method needs to check for a frame
+
+	could also add subclasses which have frames
+	not best since we need loads of new classes
+	keep same interface as unframed classes
+	
+	best: FramedShape as subclass of shape which contains a reference to a shape
+	FramedShapedecorates the shape
+
+	provide a way to add optional functionality (decoration) to all classes in a hierarchy without changing code for base classes or subclasses
+	allows multiple decorations to be added to one object
+
+	not good if there is only a few common modifications
+	can make it hard to resolve the identity of the objects we are dealing with
+		long chains of small decorator objects makes it hard to debug
+	
+
+Observer
+
+	eg 2 objects where the state of one changes and the other needs to know that the state has changed
+
+	solution 1:
+	call sendSMS or sendEmail from within setState call
+	1 to many relationship
+
+	solution 2:
+	each client polls whether the state has changed
+	lots of pointless requests
+
+	solution 3:
+	publisher publishes to list of Subcribers
+	SMSSubscriber and EmailSubscriber are subclasses of Subscriber which know how to send over those mediums
+
+	multiple objects can maintain a consistent view on the state of the object of interest
+
+	different observers attach() to the publisher/subject
+	state change -> subject updates the subscribers then subscribers call subject to get the state however they implement that
+
+	can lead to large amount of computation if there is a lot of notifications and updates take a long time
+
+MVC
+	seperate the data, its presentation, and the way it is manipulated by the user
+	model - abstraction of the data
+	view - presents view onto model, captures user's input and passes it to controller
+	controller - 
+
+	passive - controller is the only class that affects the model
+	active - model is a subject that notifies a list of views on changes
+
+	model - stocks updated from network - as market data changes, model notifies the view/controller
+	view - window that renders the table of stocks, renders changes
+	controller - app that processes user input and requests the network 
+
+
+problems can be solved using established patterns that are easily understood
+not reinventing the wheel
+helps keep code extensible
+using patterns does not equal good design
+refactor into patterns when needed
+
+

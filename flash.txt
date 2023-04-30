@@ -1,0 +1,1215 @@
+
+Provide a definition for Class Diagram. Explain why a Class Diagram alone
+is not sufficient to describe a system and identify another type of diagram that can be
+useful. 
+	
+	A class diagram is a UML diagram which represents the key concepts in the system - the classes - along with their data and behaviours
+	It also represents the relationships between them, in terms of inheritance, composition and ownership
+	numeracy of relationships and nature thereof can also be represented
+
+	a class diagram represents the relationships between classes but not the flow of data over time between them
+	a sequence diagram can represent how methods are called on different classes over time
+
+
+A large company specialising in bespoke software development has won a contract
+to deliver a software tool for monitoring a particular parameter in the operation of a new
+generation nuclear power plant.
+
+	Describe the Team that is likely to be working on the project and clearly define their
+	roles and responsibilities. 
+
+		Project Manager
+			oversees the project and ensures everything is being completed on time and on budget
+			scheduling and rescheduling work
+			and tracking progress
+
+		Architect
+			usually a subject expert
+			designs the overall architecture of the system, the core classes and interfaces
+			designs majot modules
+			Specification and High level design
+
+		Lead programmer
+			leads programming team
+			spends 30% of time supervising other programmers
+			implenting complex features and solving problems
+
+		programmers
+			maybe 3-5
+			implement features according to spec and write unit tests
+
+		tester
+			designs tests for the end-to-end system for functions that aren't easy to automate
+			based on specification and focus on validating the overall product rather than induvidual modules
+
+
+	Specify the Software Model that is likely to be employed for the development of the
+	software. List the key stages in the development process and explain the advantages of
+	this approach for this type of software.
+	
+		waterfall
+			analysis and specification
+			design
+			implementation and integration
+			testing
+			deployment and maintenance / operations
+
+		requirements can be known from the start
+		important to spend a long time analysing and validating requirements because cost of mistakes is high
+			will be very hard to make changes after deployment - recall may be needed
+		works well with traditional project management tools like gantt charts and makes billing the customer easy
+		allows comprehensive testing period allowing for regulatory certification
+		>>>>> safety critical so has to work from the start!!!!!
+
+
+	Discuss what could go wrong with the project and what sort of risks the company
+	should be prepared to mitigate.
+
+		the project could overrun or go over budget - risk of failure to deliver what was promised and delay the project or harm the business
+		requirements could be missed or misinterpreted - risk that product will not be delivered in a working form and expensive changes/recall will be required
+		the requirements may change - risk that time spent working on something will be wasted
+		>>>>> users might use the system in unexpected ways!!!!!
+		>>>>> performance in real-world conditions might be bad!!!!!
+		>>>>> safety or security requirements might not be met!!!!!
+
+	
+	Describe the measures that the company could implement to reduce the likelihood
+	of any potential crises in the project.
+
+		overrunning - add extra time into the project or leave option to descope as required, make sure schedule and project management tools are employed correctly
+		requirements wrong - go over them with experts and developers and make them 100% clear and correct, consider analysis methods like FMEA
+		changes may be needed - maybe take a more iterative approach like spiral
+		users might use the system in an unexpected way - perform usability tests with representative user groups
+		performance might be bad - do scaling and performance tests in as close to real world conditions as possible
+		safety or security might be bad - non functional validation testing
+		>>>>> involve experts in designing test processes!!!!!
+
+		integration testing
+		validation testing
+		performance testing
+		stress and scaling testing
+		security testing
+		usability testing
+		non functional testing
+		
+
+Provide a definition for Class and Object. Describe the relationship between them.
+	
+	A class is a key concept within a software system
+	it has data and behaviour
+	they provide abstraction and encapsulation, making it easier to modify and grow the software
+
+	an object is an instantiation of a class
+	two objects of the same class with the same data will behave identically
+
+
+Explain what is meant by a Design Pattern in the context of Object Oriented
+Design. Give one example of a Design Pattern.
+	
+	a design pattern is a standard architecture employed to solve a common problem in software design
+	the design pattern can be represented in a standard fashion such as with UML and shared, then applied to similar problems by other developers
+	for example, the observer pattern can be used to disseminate information to multiple different destinations in a simple way
+		>>>>> multiple different objects maintain a consistent view on the state of the object of interest!!!!!
+
+
+Give two examples of Agile methodologies, and compare and contrast them
+with more traditional software development models. 
+
+	agile methodologies:
+		extreme programming
+		test driven development
+		feature driven development
+		agile modelling
+		agile unified process
+		dynamic system development
+		scrum!!
+
+	fast iterations (week) vs slow development cycle (months)
+	automated testing vs testing phase at the end
+	automated build vs manual build
+	user stories evolving vs spec fixed from start
+	>>>>> harder to charge customers and use traditional project management tools!!!!!	
+	>>>>> not suitable for safety critical systems!!!!!
+
+
+A company is working on the development of software for monitoring of zebrafish
+in research laboratory settings. The results are used to investigate the genetic cause of
+human diseases, and identify and test new drugs to treat the diseases being modelled.
+
+	Suggest a specific software development model suitable for this project.
+	Discuss considerations to be taken into account in making this decision and explain
+	the reasons for your choice.
+		
+		waterfall is suitable because the requirements can be known from the start of the project and are unlikely to change
+		on top of this, the application is safety critical and must work from the start
+			otherwise medical outcomes may be less positive
+		stringent regulation is likely to apply for which comprehensive documentation and extensive testing will be required
+			the testing phase of waterfall allows for this
+		the cost of changes may be very high, involving recalling machines etc
+			so the requirements must be well understood from the start, suggesting a thorough analysis and specification process as in waterfall would be beneficial
+		agile methods can be used after core development for non safety-critical features
+	
+
+	Describe the software development process for the proposed model and give
+	examples of the tools that can be used to manage the development process. 
+		
+		waterfall process:
+			analysis and specification
+				investigate the system and wider systems to interface with and understand what is required
+				formalise the requirements in a specification and validate the specification with stakeholders
+				>>>>> and documentation in accordance with relevant regulations is produced!!!!!
+			design
+				plan out the architecture and interfaces of the system
+				>>>>> design is documented!!!!!
+			implementation and integration
+				implement the code for the system and integrate the different modules into a cohesive whole
+			testing
+				ensure all functions of the system are correct and that it meets the specification
+				>>>>> test processes are designed!!!!!
+				>>>>> test in real life environment or as close as possible!!!!!
+			deployment and maintenance
+				onboard users to the system and provide support for any issues, releasing bugfixes in case of problems
+
+		tools:
+			gantt charts for project management and schduling
+			quality management framework for testing
+			source code management system can be used for development
+
+	
+	Identify what potentially could go wrong if your suggested software
+	development model is employed. Describe the measures that the company could
+	implement to reduce the likelihood of any potential issues.
+
+		requirements may be missed - if changes have to be made after deployment the cost will be very high
+			- consult with experts and make sure analysis and specification is comprehensive
+			- can also use more iterative approach / protyping like spiral to reduce cost of missed requirements
+		performance may not be good in real world conditions - perform scaling and stress testing
+		security may be lacking - system may be comporomised - non functional validation tests
+		users may use the system in unexpected ways - people may not get good use from the system - usability testing
+		>>>>> not completed on time / on budget - use project management tools!!!!!
+		>>>>> requirements are misinterpreted - make sure requirements are clear and design test processes with experts!!!!!
+
+
+In object oriented design, explain the difference between an interface and an
+abstract class.
+
+	An interface is an abstract class that declares/defines no data
+		defines only behaviour
+
+
+In object oriented design, explain what is meant by decoupling.
+
+	Decoupling is a quality of a system that means it is easy to modify and extend one part/module/class without interfering with and needing to be concerned about
+	the effect on other parts of the system
+	it can be acheived using abstraction and encapsulation
+
+
+In software engineering, discuss advantages and disadvantages of continuous
+integration practices.
+
+	continuous integration means that changes made to the software are automatically tested using the automated test suite
+		helps to catch bugs early - following test early & test often advice to keep cost of testing and bugs low
+		bugs are caught early and can be fixed before they cause more problems
+	however the maintenance overhead of running the test pipeline and writing unit tests may not be worth it, especially for small projects
+		developers don't like writing tests
+	>>>>> automated build is neccessary - can save time but need to set up!!!!!
+	>>>>> single source repo - avoid complex manual merging!!!!!
+
+
+A company is working on an independent news website that uses a novel approach
+to publish a diversity of opinion on matters concerning public life and democracy.
+
+	Suggest the software development methodology that would be most suitable
+	for the development of the public news website. Describe this software development
+	methodology and explain how it can be used in the project.
+
+		requirements are not known from the start - how users will interact with and on the site is unclear
+		would also like to be able to quickly integrate changes and get feedback from users
+		so use agile approach eg scrum
+		iterative process, releasing new versions continuously through CI/CD and doing week long sprints based on user stories
+			user stories keep focus on user, allow specification for software to evolve and integrate user feedback
+		>>>>> need to reduce cost of change, since what is right today is not what is right tomorrow!!!!!
+		>>>>> ten minute builds, automated testing!!!!!
+
+
+	Design a testing strategy for the website. Identify the key test areas that
+	would allow the company to address the main risks in the project, and specify the
+	appropriate tests to mitigate these risks.
+
+		risk that users may not be able to use/will use the site in unexpected ways
+			usability testing with representative user groups
+		risk that the site will not perform under load/in real world conditions
+			performance, stress and scaling tests in as close to real world conditions as possible
+		there may be security problems with the site
+			non-functional acceptance testing, pentesting
+		logic on the site/UI components will break
+			automated unit tests
+		the site will not serve the purposes that the users need it for
+			validation & verification testing
+		
+
+	Describe the deployment pipeline that might be suitable for the public news
+	website project, its main stages, the tools that might be used and the benefits of
+	following the proposed approach.
+
+		step 0 is code linting and static type checking
+			quick checks to make sure code is valid before building
+		first step is building - must be automated and less than 10 mins
+			Make / Jenkins
+			output is build artefacts
+		artefacts are run through automated test pipeline
+			>>>>> regression tests!!!!!
+			>>>>> longer running acceptance tests!!!!!
+			Jenkins / TravisCI / CircleCI
+		then validated artefacts are brought to staging environment where they can be run in close to real world conditions by testers
+			release candidates can be easily viewed and classified
+		then deployment might be handled by jenkins again, pushing new versions to servers
+
+		benefits:
+			reduce overhead of manually building and testing versions, saving developers time and therefore money
+			can quickly release fixes or new features to stay competetive
+			>>>>> get feedback from users on features quickly!!!!!
+
+	
+In software engineering, discuss the differences between a composite design
+pattern and a decorator design pattern.
+	
+	The composite pattern allows a group of objects to be treated (have the same interface as) a single object
+	The decorator pattern allows an object to gain additional fucntionality while maintaining the same interface
+
+
+A company is developing control software for an automated car braking system.
+
+	Specify the software development methodology that would be most suitable.
+	Discuss considerations to be taken into account in making this decision and explain
+	the reasons for your choice. 
+
+		safety critical system so use waterfall
+		>>>>> has to work perfectly from the very start!!!!!
+		waterfall allows specification to be well-defined from the start and robust documentation to be produced throughout the process
+			which is vital for safety and regulatory certification
+		if anything is missed or there are bugs the cost of recalling cars would be huge
+			so waterfall is good because it allows comprehensive analysis for the specification before implementation
+			and thorough testing phase
+		waterfall also makes it easier to charge customers and works well with traditional project management tools
+
+	
+	Describe the software development process for the proposed model and give
+	examples of the tools that can be used to manage the development process.
+
+		waterfall phases:
+			analysis and specification
+				investigate the system and the environment it will be used in, the users and other systems it must interface with
+				as well as any relevant regulation, making documentation as neccessary
+				define exactly what functions the software needs to have
+			design
+				decide on the architecture of the system, the high level design and core modules and interfaces between them
+				create design documentation
+			implementation and integration
+				write the code for the system and produce unit tests, integrate the different modules in the system
+			testing
+				comprehensively test the system in accordance with regulation and document the process
+				make any changes needed
+			deployment and maintenance
+				onboard users to the system and provide support, releasing bugfixes if needed and updates
+
+		tools:
+			gantt chart for project management
+			source code repo
+			quality management system
+
+
+	The latest model of the car will have a network connection with all software
+	updates and patches being delivered wirelessly. Discuss how this is likely to affect
+	your development process, and the implications it will have for the project costs. 
+
+		ota updates mean that any errors in the system can be corrected by updates
+			so cost of errors is reduced, recalls arent needed
+			but if some cars lose connection and miss the update there could still be safety concerns
+		maintenance of the ota system will increase costs
+			management of many different versions deployed at different times and on different vehicles will be complex and costly
+		can take a more iterative approach since CD is possible
+			but not really because safety is still very important
+		>>>>> security of the ota system will need to be 100% and will be expensive!!!!!	
+
+
+Five basic perceptual tasks: discrimination, detection, recognition, estimation, and search:
+
+	Discrimination: distinguishing a difference in sensory stimulation
+	Detection: telling whether an event of interest occurs in the environment
+	Recognition: categorising a stimulus
+	Estimation: estimation a property of an object or event in the environment
+	Search: locating an object of interest
+
+
+Consider the design of a display that reveals the speed of a car to a driver. What are the positive
+and negative qualities of using vision, hearing, and tactition as a display in this case?
+
+	vision: very fast and high-bandwidth, parallel, detailed but may distract attention from the road
+	hearing: serial, slower and lower bandwidth, may distract from conversation in the car and get annoying
+		>>>>> might be hard to notice if its noisy!!!!!
+	tactition: fast, would not distract as much but also serial and less sensitive/accurate, also requires physical contact
+
+
+Fitts' Law
+	MT = a + b log_2 (D/W + 1)
+
+
+Hick-Hyman Law
+	open loop decision time:
+
+	T = bH = b sum_{i=1}^{n} ( p_i log_2 (1/p_i) )
+	H is the entropy of the decision
+
+	if they are all equally likely, Hick-Hyman applies:
+
+	T = a + b log_2 n
+	n is number of choices
+
+
+A simple mobile device is operated by holding the device in the non-dominant hand and a plastic
+pen in the dominant hand. The device enables text entry through a graphical keyboard presented on
+a resistive screen. The system does not perform word prediction or auto-correct.
+
+	A designer proposes to improve text entry performance by changing the colors on the keys on the
+	graphical keyboard. From first principles, explain why this approach is fundamentally flawed.
+		
+		changing the colours will help experienced users quickly distinguish and localise each key
+		however, the bottleneck in this scenario is not recognition, it is the motor control task of moving the pen between the keys
+		this task is not made much easier by changing the colours of the targets
+		>>>>> Fitts' Law applies, which is not dependent on visual saliency of targets!!!!!
+
+	
+	An alternative approach is to optimize the keyboard layout so that keys on the keyboard that are
+	more likely to be hit in succession are close together. Assume there is a statistical letter-based bigram
+	model that provides the the conditional probability of a letter key kj following a letter key ki. Using
+	this model and knowledge about human motor control, propose an objective function for this design
+	problem.
+
+		objective function: sum of Fitts' Law evalulated over all keypairs' distances weighted by bigram frequency
+		\sum_{i=0}^{26} \sum_{j=0}^{26} p_{ij} ( a + b \log_2 (D_{ij}/W + 1) )
+
+
+	The optimization landscape rendered by the objective function in (b) results in a valley with many
+	possible designs that have similar performance. Propose an additional design objective that would be
+	particularly useful for this design problem. Briefly motivate your answer.
+
+		The above expression will apply for users who have learned the location of all the keys, but to help new users we should try to make the locations
+		of the keys easy to learn
+		Can do this by assigning a larger objective function to layouts that are more similar to QWERTY, or layouts that organise the keys in roughly alphabetical order
+
+
+A design team is creating a collaborative information visualization interface for a team of
+2–3 analysts. The visual display measures 4 × 4 m and is mounted on a wall. The positions of the
+individual users is tracked using an array of depth cameras mounted on top of the visual display so
+that the system knows the position of each user—both in relation to the other users and in relation to
+the display. The information visualization changes depending on the distance between an analyst and
+the display: the closer an analyst is to the display, the more detailed information is provided. If two
+analysts stand close together they experience the same information visualization in front of them. If
+two analysts stand further apart the display will split and show them different visualizations that will
+change individually depending on their respective distances to the display.
+
+	Indicate where this system is situated in the two-axis model of collaborative technology.
+
+		Colocated and Synchronous
+
+	
+	Explain how this system fits within the reality-based interaction framework.
+
+		exploits people's awareness and control of their social surroundings and proximity to the board and other people
+		proximity based interaction through the system
+		and the fact that users can speak and interact during use
+
+	
+	Explain what the difference is between collaboration and cooperation.
+
+		Cooperation is working on a task by splitting it up into parts which can be handled by different people
+			>>>>> some division of labour is in place!!!!!
+		Collaboration indicates the existence of shared goals, knowledge and ways of working, in addition to cooperation
+
+	
+	A team of three analysts are to use this system to collaboratively gain insight into a complex
+	dataset. Discuss how how this system may support or impact coordination.
+
+		will allow people to view the dataset at different levels of abstraction?????
+		>>>>> awareness!!!!!
+			will allow members of the team visibility into what the others are looking at
+			allows people to work together just by walking closer to each other
+			allows communication by speaking
+		>>>>> boundary objects!!!!!
+			>>>>> the board is a boundary object!!!!!
+		>>>>> articulation work!!!!!
+			>>>>> determining how to carry out work - may be helped by system reactivity or harmed by need to coordinate positioning!!!!!
+
+
+A company is designing a smartphone app that uses the smartphone’s sensors to automatically
+detect when the driver is searching for an available parking spot. When such an activity is detected
+the system connects to an online service and proposes an available parking spot to the driver.
+
+	State the system boundary of this service. Briefly motivate your choice of boundary.
+			
+		includes phone, internet connection, car, user, car park
+		app needs to understand state of user and car to know when and how to alert
+		needs to include phone and internet connection as it depends on these to run
+		needs to know about car park to know what alert to give
+		>>>>> any applicable legislation!!!!!
+
+
+	State the type and level of automation of this service.
+
+		presents one alternative action to user that can be ignored or dismissed = level 4
+		decision automation - automates the action of deciding on a space
+
+
+	Suggest two user-centric primary evaluation criteria that would be the most critical when assessing
+	this automation task. Briefly motivate your answer.
+
+		Minimising cost of incorrectness - could waste user's time if the suggested spot isnt empty????? no thats system centric
+		Considering the user's attention - don't distract them while driving
+		>>>>> mental workload - should only help find a spot not add extra mental strain to the process!!!!!
+
+
+	Critique this service by drawing from three relevant principles for mixed-initiative interfaces.
+
+		learn from experiences - maybe
+		Easy to dismiss - otherwise it would annoy the user
+		>>>>> provide significant added value!!!!!
+		>>>>> Minimising cost of incorrectness - could waste user's time if the suggested spot isnt empty!!!!!
+		>>>>> balance user's attention and timing of the service!!!!!
+		
+
+	Suggest a suitable risk assessment method for this service and explain how this risk assessment
+	would be carried out.
+
+		hopefully a low risk service if implemented correctly so can use SWIFT
+		ask if this happens, what will be the outcome
+			with a group of different people for as many ideas as possible
+			when risks are identified decide whether they need mitigation and if so create some next steps to be followed
+		>>>>> table of prompts, their hazards and risks, mitigations and a ranking!!!!!
+
+
+A central task in children’s eduction is learning multiplication tables. To support this, a
+design team has created a tablet app that challenges children in class to quickly carry out a series ten
+multiplications. Depending on the time and accuracy the child receives points which the child can use
+to buy equipment and clothing for a virtual rock band. This virtual rock band can be shared with
+other children in the class. The app is administered by the child’s teacher and both the teacher and
+the child’s parents can observe progress.
+	
+	Explain how the human needs that are important according to self-determination theory support
+	this design.
+
+		sdt says people want
+		to grow and improve
+			design helps students improve their skills and see their progress reflected in their band
+		to be self-directed
+			allows students to express themselves through the choice of things for their band
+		to feel togetherness
+			students are able to share their progress with their friends in the class
+		>>>>> competency, autonomy and relatedness!!!!!
+
+	In the event the child inputs an incorrect answer, explain the difference between a mistake and a
+	slip. Briefly describe what a mistake or a slip may tell us about the child’s learning.
+		
+		a mistake is where the intention was wrong but the execution was correct
+			indicates that more learning is needed
+		a slip is where the intention was correct but the execution was wrong
+			doesn't tell anything about the child's progress
+
+
+	Explain if a child is exhibiting skill-, rule-, or knowledge-based behavior when using the app to
+	answer multiplication questions.
+
+		initially knowledge based, since the child must interpret the UI, question and figure out how to answer it (form a goal)
+			then figure out how to input the answer and evaluate their success
+		then rule based as the child knows the flow and applies rules to figure out the answers to the multiplications
+		then skill based as the answers become memorised
+
+	
+	Propose a strategy for managing the risks inherent in this system.
+
+		SWIFT evaluated on eg. a quarterly basis
+		need to have a way to identify risks, mitigate and track them
+		>>>>> risk management strategy has 5 steps!!!!!
+			>>>>> identify hazards, estimate risks, evaluate risk, reduce risks to acceptability, monitor risks!!!!!
+		>>>>> need system boundary!!!!!
+		>>>>> HAZOP and risk matrix!!!!!
+
+
+A design team is tasked with creating a user interface and workflow for a new purchasing system
+for a firm making embedded devices with 8,000 employees distributed in the UK, USA and Australia.
+The firm has a highly unusual set of requirements and work practices for managing purchasing due to
+working in a niche area heavily restricted by regulation and international law. The purchasing system
+is to be used by engineers, engineering managers, and quality assurance testers distributed in the UK,
+USA and Australia.
+
+	Propose principles for formulating a research strategy for carrying out user research with the
+	stakeholders. Motivate these principles with reference to the purchasing system.
+
+		>>>>> no fully accurate method of user research!!!!!
+			>>>>> so selection of methods needs to follow from the goals!!!!!
+		>>>>> goals need to be clarified!!!!!
+		>>>>> balance realism, precision and generalisability!!!!!
+		>>>>> realism: how well can we model how the system will actually be used!!!!!
+		>>>>> precision: how much detailed, accurate info can we collect!!!!!
+		>>>>> generalisability: how well will user research apply to real usage by the real user group!!!!!
+		>>>>> triangulate by combining many methods to make up from weaknesses in different methods!!!!!
+
+	
+	The design team decides to carry out the user research by first distributing a survey to all the
+	end-users. The survey results will then be analyzed and subsequently used as a basis for contextual
+	inquiry, which will be carried out in the UK due to the design team being based there. Discuss possible
+	issues with the methodological quality of this research strategy.
+		
+		survey will suffer from say do problem
+		and will be skewed by many biases including responder bias
+		will not be able to expose tacit knowledge
+		UK user group may not generalise well
+		>>>>> no triangulation!!!!!
+
+
+	Explain how the principles of contextual inquiry could be used to gain insight into users’ needs and
+	wants based on their interactions with the existing purchasing system.
+		
+		microphenomenological interviews - capture the user in the act of doing something maybe unexpected and ask them about it
+		should be in as realistic a setting as possible
+		minimise effect of observation
+		>>>>> context: users actually using the system in their work!!!!!
+		>>>>> partnership: form a relationship with the users so that they explain their experiences!!!!!
+		>>>>> interpretation: involve the user in finding meaning in the data collected so design team can work with it!!!!!
+		>>>>> focus: interview should be deep and capture all nuances!!!!!
+
+
+	Describe what the say/do problem is. Would the say/do problem apply to the contextual inquiry
+	planned by the design team here? Explain your reasoning.
+
+		the say do problem is the fact that what people say they do is not what they do,
+		because what they do is driven in part by subconscious tacit knowledge which cannot be communicated
+		contextual enquiry is not as sensitive to this as eg a survey because it observes what users do rather than relying on what they say
+		>>>>> and interviewer and user work together to derive meaning so users arent speculating!!!!!
+
+
+A large international consultancy firm is introducing a new communication tool to stimulate
+more collaboration between local and remote team members engaged in consulting. The tool enables
+secure messaging and sharing of documents and spreadsheets, including valuable client data.
+
+	Describe the difference between personalization and tailoring.
+		
+		personalisation is about adaptation of nonfuntional behaviour
+		tailoring is about changing the function of the system to a user's preferences
+
+	
+	Explain why, despite the system initially fulfilling the users’ needs and wants, users are still likely
+	to engage in appropriation.
+
+		the users' needs will change over time so different ways of engaging with the system will emerge for the new needs
+		>>>>> and full understanding of users' needs is unlikely from the start!!!!!
+
+	
+	Suggest three appropriation moves that might occur with this system and explain how guidelines
+	for appropriation can mitigate or enhance, as appropriate, such effects.
+
+		>>>>> slow uptake!!!!!
+		>>>>> use of a different system due to percieved deficiencies of the system!!!!!
+		>>>>> substitution of parts of the system for other systems!!!!!
+
+		>>>>> expose intentions of the system, visibility provides trust!!!!!
+		>>>>> support rather than control users, give flexibility!!!!!
+
+
+A device is designed to allow users to control the relative humidity in their house. The device
+has two modes. In Automatic mode the system controls the level of relative humidity such that it is
+within an interval of 50-60%. In Manual mode the user can set a specific desired level of relatively
+humidity and the system will attempt to maintain this level. The device is a small wall-mounted unit
+with the following user interface elements: (1) a visual display indicating the current level of relative
+humidity and whether the system is in Automatic mode or Manual mode; (2) ‘-’ and ‘+’ buttons
+that enable the user to reduce or increase their desired level of relatively humidity respectively; (3)
+an ‘Automatic’ button that puts the system into Automatic mode. If the user pushes the ‘-’ or
+‘+’ button the system switches to Manual mode and will remain there until the user pushes the
+‘Automatic’ button.
+
+	Draw a state diagram for this system.
+
+		,_,						  ,_+-_,
+		| v						  |    v
+		auto --- press + or - --> manual
+		  ^                         |
+		  '----- press auto --------'
+	
+
+	By viewing interaction with this system as goal-directed action, explain the steps comprising the
+	gulf-of-evaluation and the gulf-of-execution for this user interface.
+
+		gulf of evaluation: the user needs to figure out what state the device is in and what state they would like it to be in, and how these states relate
+		to the humidity in the room. There is also a long delay between the device state changing and the room humidity changing
+
+		gulf of execution: the user needs to input the right sequence of button presses to get the device into the state they would like it to be in
+		>>>>> harder because the interface displays not the target value but the current value!!!!!
+
+
+	State the type type and level of automation for this system.
+
+		action automation - sensing and adjusting the humidity level
+		very low level automation because it just keeps the humidity at 1 level and only if the user sets it to
+		>>>>> offers a complete set of actions: level 2!!!!!
+
+
+	Is this system a mixed-initiative interface? Briefly motivate your answer.
+		
+		not really because the interface does not collaborate with the user, it is set by the user
+		>>>>> system does not take any initiative (to commence automation)!!!!!
+
+
+	Analyze this system based on the following five cognitive dimensions of notation: (1) viscosity; (2)
+	visibility; (3) premature commitment; (4) hidden dependencies; and (5) role-expressiveness.
+
+		viscosity of the interface is low because it can be controlled easily by a few button presses, but viscosity of the overall system including humidity of the
+		room is high because it changes very slowly
+		visibility: not very good because the target humidity is not displayed?????
+		>>>>> visibility is good since all actions available to the user are visible!!!!!
+		premature commitment: ok, you can easily switch in and out of any modes
+		hidden dependancies: target is hidden and depends on button presses
+		role expressiveness: ok since the interface displays if it is in manual or auto
+		>>>>> role of buttons is clear since they have markings on which represent their function!!!!!
+
+
+A software agent is incorporated into a spreadsheet application. The agent observes the user’s
+work in the spreadsheet and automatically detects when data is suitable to visualized. At such a point
+the agent proposes the most suitable visualization method for the data. The user can also tell the
+agent to propose a visualization at any point by clicking on an icon representing the agent. If the
+visualization is not suitable, the user can ask the agent to generate more suggestions, or simply show
+a gallery of all possibilities. Based on such interaction the agent learns the user’s preferences.
+
+	State the type and level of automation of this service.
+
+		>>>>> action automation and level 5 - automatically executes the action if the user approves!!!!!
+
+	
+	Using the user-centric and system-centrical evaluation criteria from the types and levels of automa-
+	tion framework, suggest three potential design issues with this system. Briefly motivate each design
+	issue.
+
+		>>>>> mental workload & automation reliability & cost of action outcomes - assistant may bother the user when they are focused and distract them!!!!!
+
+
+	Explain whether the system as stated is adhering to the principles for mixed-initiative interfaces.
+
+		yes, value is added since the user may be able to present a good visualisation they wouldnt have otherwise
+		can be easily dismissed
+		and the user can prompt the system if it does not take the initiative itself
+		>>>>> and learns from prior interactions!!!!!
+		>>>>> and makes suggestions when suitable, balancing cost of interruption with value of suggestion!!!!!
+
+
+Identify Extreme Programming practices that would be not suitable for a project
+designing software used for medical diagnostics of illnesses in patients.
+
+	user stories instead of spec - not fixed or known at the start
+	continuous deployment - bug could cause misdiagnosis
+	shared source code repo - some code may need to be protected
+	no set test phase
+	>>>>> team continuity - might not be possible due to long timelines!!!!!
+
+
+A new technology startup is developing a social photo sharing application. The
+application allows mobile phone users to capture images from the camera, or select
+existing images and “publish” them in their photo stream (optionally applying some
+image effects before submitting images). Users can “follow” photo streams of other
+users. In addition to the mobile app, users can access their account online via a
+website. Design a test plan for the project, specifying types of tests, including their
+purpose and examples.
+
+	users may find it difficult/unintuitive to use the app or site or may want to use it in unexpected ways
+		run usability studies with representative user groups
+	the UI flow of the app or site or the underlying logic may break due to a bug
+		developers should write unit tests alongside their code which will run automatically to catch bugs
+		for the tests that can't be automated, QA testers should have end-to-end validation and verification testing procedures
+		>>>>> and integration tests to ensure modules interface correctly!!!!!
+	the performance of the app may not be acceptable in real-world use
+		run performance, load and stress tests in as close to real-world conditions as possible
+	security of the app and site may be insufficient
+		non-functional acceptance tests
+	regression tests too
+
+
+A company developing mobile apps submitted an app for publishing in a leading app
+store. The application was rejected due to the Support URL being unreachable when
+evaluated in the app store review process. This mistake resulted in a two week delay
+in publishing the application.
+
+The development team started to use Five Whys technique to analyse the problem
+as follows:
+
+i. Why was the submission rejected? The support URL was unreachable.
+
+ii. Why the URL was unreachable? The development team did not setup the
+URL on the server.
+
+iii. Why did not the team setup URL? Preparing the release in a rush they
+specified the correct URL in the submission form but forgot to set it up on the server.
+
+iv. Why was not this mistake spotted by in testing? The app submission is a
+manual process and there are no tests to check the correctness of the submission form
+data.
+
+v. Why was the submission process manual? The company has only published
+two application and it was quick for a single person manage both submission.
+
+Using the Five Whys technique analyse the cause of the problem and suggest a
+proportional corrective action at every level of the analysis.
+
+	support url was unreachable
+		>>>>> setup the url!!!!!
+		make sure support urls are reachable before submitting apps
+	did not setup url
+		automate process of setting up support urls
+	forgot to set it up
+		add automatic tests before a form is submitted
+	no tests to check, manual process
+		automate this process, invest time now to save time later
+	quick for 1 person to oversee process
+		rethink approach to important submissions, work as a team to make errors less likely
+
+
+Consider an input device for a medical device that must ensure users are making very accurate
+inputs. Input needs range from providing numbers and text to controlling a cursor on a screen. Which
+input devices would be suitable for which types of input? Is the choice of input device sufficient to
+ensure high reliability? If not, what other elements of the user interface would need to be considered?
+
+	>>>>> certain input is needed!!!!!
+	input devices that are large, easy to use and tactile
+	mouse may be shaky, joystick might be better
+	keyboard for text input
+	also need workflows and UI to emphasise accuracy and correctness, and allow mistakes to be avoided or undone easily
+
+
+Consider the following systems: (1) a fall-detector device for elderly patients in a hospital; (2)
+a streaming music service app; (3) a virtual reality head-mounted display; and (4) a spreadsheet used
+by a professor working in a university to record exam marks and grades. Which systems are they
+embedded within and which systems do they have to interact with?
+
+	1) the patient, the device and its network connection, the hospital environment and its staff
+	2) the app and the OS and phone it runs on, its connection to the internet and server, the user and the music industry
+	3) the device, the computer running it and the game, the user and the room they are in >>>>> and other input devices!!!!!
+	4) the professor, the computer and OS, the data being processed, the university and the grading system
+	
+
+Consider the problem of allowing users an easy way to control the heating and cooling in the home.
+Write down a problem statement. Is this a well-defined or ill-defined problem? Use goal refinement to
+evolve your initial problem statement into a well-defined design task.
+
+	not well defined, an easy way is different for different people and the meaning of control is unclear
+	first define users
+		95% of UK population who use a home heating system
+	define control
+		set the central heating temperature within 30 seconds
+	define easy
+		that can be operated competently on the first try
+	need objectives and constraints
+		>>>>> constraint: $15 budget!!!!!
+
+
+Propose and motivate a process model for the following design tasks: (1) the design of a magnetic
+resonance imaging visualization tool for medical practitioners; (2) a smart wristband that collects
+biophysical measurements from the user and provides exercise and lifestyle advice; (3) a shopping
+website for clothes that allow users to “try out” clothes in virtual reality; and (4) a mobile phone app
+that teaches children spelling.
+
+	>>>>> 1) human factors engineering - focus on safety and human error!!!!!
+	>>>>> 2) agile - many unknowns so need to adapt to changing requirements!!!!!
+	>>>>> 3 & 4) usability engineering - systematic trial and error ensures acceptable usability!!!!!
+
+
+A problem when using auto-correct on a smartphone keyboard is that the system may inadver-
+tently correct text that should not be corrected. This problem has been colloquially described as the
+‘auto-correct trap’. A smartphone keyboard redesign attempts to alleviate this problem by allowing
+users to press harder on keys the user does not want the auto-correct algorithm to change. The harder
+the key press, the less likely the auto-correct algorithm changes that key press into a different letter.
+
+	Is this system open-loop or closed-loop interaction, or a combination of both? Briefly motivate
+	your answer.
+
+		open loop because there is no feedback - the feedback only comes after the long press is released and the autocorrect either does or doesnt act?????
+		>>>>> closed loop because long / hard press is based on tactile feedback!!!!!
+
+	
+	A key assumption behind this system is that users are able to tell beforehand whether the auto-
+	correct algorithm is likely to auto-correct their input into the intended text or not. Suggest a suitable
+	research method for validating this assumption among a large body of smartphone keyboard users.
+	Briefly motivate your answer.
+
+		can use a survey
+		may not be easy to find representative group - different users will use different vocabulary and will not be able to capture all of it in the survey
+		say do problem should be minimal because the survey is not on user's actions but just their understanding of autocorrect which is not tacit knowledge
+		>>>>> could reach a large body of users!!!!!
+
+
+	The system is implemented and evaluated in an experiment. Users are provided sentences from
+	a corpus that they are asked to type as quickly and as accurately as possible. The independent
+	variable is CorrectionMethod with two levels: {Auto-Correct, Pressure-Sensitive-Auto-Correct}.
+	The dependent variables are entry and error rate. Explain why a within-subjects design is both
+	practical and suitable.
+
+		asymmetric skill transfer will be minimal since the tasks are distinct
+		variance of users will be cancelled out by exposure to both correction methods
+		>>>>> keeps number of users smaller!!!!!
+
+
+	Discuss internal and external validity threats to the experiment sketched in (c).
+
+		internal validity:
+			high as long as a mix of words that would be correctly and incorrectly corrected is used
+		
+		external validity:
+			user group from the study may not generalise to the wider user population
+			lab environment may not be representative of real world
+			sentences used in the trial may not be representative of real world language
+			>>>>> is copying prewritten sentences representative of composing a text as in real usage!!!!!
+
+
+A drawing application runs on a tablet operated with a pen. The design team wants to implement
+a graphical menu structure that allows users access to all commands in the software.
+	
+	Explain the difference between closed-loop and open-loop control, including the advantages and
+	disadvantages for each form of interaction.
+
+		closed loop control:
+			slower, more precise, involves feedback
+		open loop control:
+			faster, less precise, no feedback because it's a memorised motion
+
+
+	Describe the difference between a pie menu and a marking menu.
+
+		a marking menu only displays a visual menu after a timeout, before which time a gesture can be drawn to navigate the menu rapidly
+
+	
+	Explain when interaction with a marking menu is closed-loop and open-loop.
+
+		when the user is first using the menu, interaction is closed loop because the user is navigating the menu based on visual feedback
+		over time the motions to nagivate to each option become memorised
+		the motion can then be exectuted as a closed loop interaction
+
+	
+	The design team is considering a choice between a hierarchical linear pull-down menu and a marking
+	menu. Describe the primary advantages and disadvantages in using either approach.
+
+		pulldown menu is slower and always open loop so can't be as fast for experienced users
+		but more familiar for most users
+		>>>>> dropdown menus can have more options per level!!!!!
+		>>>>> marking menus have continuous transition from closed to open loop interaction!!!!!
+		also dropdown menu is not good for pen input device
+
+
+	There are two ways to implement the hierarchical linear pull-down menu. In the first implementa-
+	tion, as soon as the pen tip leaves a submenu, the submenu disappears. In the other implementation
+	the submenu only disappears if the pen tip enters the previous menu. Explain whether these imple-
+	mentations rely on crossing or steering actions.
+
+		first option is steering because user has to keep pointer in a small channel
+			higher index of difficulty
+		second is crossing, lower index of difficulty
+
+
+A smartphone app enables a user to achieve a task through two alternative methods. In the first
+method, the user must push a button on the screen, navigate to a menu with five choices, and choose
+the fifth choice. This brings up a Yes/No confirmation dialog box. The user must answer Yes.
+
+In the second method, the user must hold a physical button down for one second until the system plays
+a brief audio beep and then speak a command. This results in the system playing a different audio
+beep to indicate it has commenced speech recognition, and yet another different audio beep to indicate
+speech recognition has concluded. Assuming speech recognition successfully recognized the command,
+at this point the system uses audio to ask the user for a confirmation. The user has to again hold a
+physical button down for one second until the system plays a brief audio beep and then speak “Yes”.
+
+	Carry out a KLM-GOMS analysis to understand the time durations required to carry out the
+	task using both methods. Propose any operators necessary and estimate their time durations. Briefly
+	motivate the operators, their estimated time durations, and the operator sequences involved.
+
+		operators:
+			push a button: 0.3 s
+			navigate a menu of N choices: 0.2N s
+			
+			recognise a beep: 0.5 s
+			speak a command: 1 s
+			listen to audio from computer: 1 s
+
+		first:
+			0.3 + 0.2*5 + 0.2*2 + 0.3 = 2 s
+		second:
+			1 + 0.5 + 1 + 0.5 + 1 + 1 + 0.5 + 1 = 6.5 s
+	
+		>>>>> PB + NM(5) + NM(2) + PB = 2!!!!!
+
+
+	Explain the limitations of the KLM-GOMS analysis carried out in (a) with reference to the following
+	design issues: (1) novice versus expert performance; (2) the uncertainties inherent in interaction when
+	attempting to carry out the task using the two methods.
+
+		The above analysis assumes expert level mistake-free performance. If for example the buttons are named very confusingly mistakes may be common
+		meaning that average time taken would be much greater, especially for novice users
+		>>>>> learning effects and walk up behaviour are not modelled!!!!!
+		>>>>> uncertainties ie whether a speech command was reo=cognised successfully are not modelled!!!!!
+
+	
+	There is a risk an undesired event occurs when the user attempts to carry out the task. This
+	happen when upon confirmation the user indicates No. Draw a fault tree to understand the possible
+	causes of such an event.
+		
+		No
+		and or
+			press no button
+				wrong user intent
+				slip
+			speak no
+				wrong user intent
+				slip
+
+
+A design team is is creating a helmet that enables rapid triage for people in the vicinity of
+blast explosions in a war zone. The idea is that the helmet has sensors that can sense the risk of brain
+injury due to an explosion and communicate this information using a visual display.
+
+	Derive a solution-neutral problem statement for this problem.
+
+		Design a head-mounted system for users in a battlefield that senses risk of brain injury and alerts the user and medical teams if there is a risk
+	
+
+	Suggest a suitable sensor for the helmet.
+
+		pressure sensor
+
+	
+	Propose a system boundary. Briefly motivate your choice of boundary.
+
+		user, helmet and system itself, power supply, network connection, battlefield environment, medical response, military organisational structure, explosion
+		system spans from the user near the explosion to the medical response - all intermediate systems must be considered
+
+
+	Draw a function structure diagram for the key functions in this design.
+
+		>>>>> in boxes: function not solution!!!!!
+
+
+The book Evicted: Poverty and Profit in the American City (2017, Crown), reports on a
+longitudinal fieldwork study that followed eight low-income families in Milwaukee, Wisconsin, USA.
+A central conclusion is that low-income families are evicted as they spend too much of their income
+paying rent, approximately 70% instead of the recommended limit of 30% of income. This results
+in a lack of financial resilience causing an unexpected setback to result in a failure to pay rent and
+subsequent eviction. At the same time, such families face very limited rental options, forcing them to
+rent low-quality expensive accommodation.
+
+	Explain why homelessness is considered a wicked design problem.
+		
+		there problem is very ill defined and is too wide in scope without a design space or constraints
+		making progress is almost impossible
+		>>>>> not possible to goal-refine to a well defined design task!!!!!
+
+
+	One finding is that low-income families frequently move and, as a result, they fail to receive notices
+	from the government that are posted by mail to their previous home address. Failing to adhere to
+	these notices results in cuts to benefits, causing evictions. Use goal refinement to evolve a well-defined
+	design task for this problem.
+
+		devise a means to reliably communicate messages from the government to low-income families
+		objective:
+			95% of messages are received
+		constraints:
+			must be usable by all families
+			must enable government to know if message was recieved
+			>>>>> no stable home address!!!!!
+
+
+	Another finding is that the landlords renting out accommodation to low-income families profit from
+	renting out large quantities of low-quality accommodation to low-income families with little choice. In
+	particular, working single mothers with small children requiring expensive daycare are vulnerable as
+	the fathers tend not pay alimony and the benefits system is slow and bureaucratic with many rules
+	that make it easy to experience a sudden cut to benefits, resulting in eviction. Draw rich picture about
+	this design context.
+
+
+	The study relies on fieldwork. Discuss the advantages and disadvantages in using the fieldwork
+	method for researching issues with homelessness identified here.
+		
+		biases can be avoided as real world situations are directly observed
+		need to build rapport
+		need to make sure observation does not affect conclusions
+		>>>>> contextualised and actual findings!!!!!
+		>>>>> may be hard to generalise specific situations!!!!!
+		>>>>> time consuming and costly!!!!!
+
+
+	Suggest a user research method for validating the findings in the study discussed here. Briefly
+	motivate your choice of follow-up research method.
+
+		>>>>> surveys can reach many people but will suffer from eg non responder bias!!!!!
+		>>>>> interviews help triangulate findings!!!!!
+		>>>>> unobtrusive research eg historical records and stats!!!!!
+
+	
+The book Normal Accidents: Living with High-Risk Technologies (1984, Basic Books) reports
+on a series of sociological analyses of accidents in tightly coupled systems with high complexities. The
+central thesis in the book is that accidents are normal in the sense that accidents are inevitable in
+highly coupled complex systems, in particular if they have catastrophic potential. This does not mean
+normal accidents are frequent: just as a human is expected to die at some point, a normal accident is
+considered a normal, albeit infrequent, event.
+
+	Explain why a tightly coupled complex system cannot be risk-free.
+
+		risk is pervasive and every situation has a small risk
+		any system that involves many interfacing situations will have risks
+		>>>>> the only way to be risk free is to do nothing!!!!!
+
+	
+	Consider the user interface design of a nuclear power plant. To avoid accidents, the user interface
+	will incorporate redundancy in the form of an automated system that checks that the operators have
+	followed the correct protocol and taken correct actions given sensor readings indicated through the user
+	interface. If the automated system detects that the protocol is not followed, the automated system
+	seizes control and proceeds to follow the protocol. What is the type and level of automation in this
+	system?
+
+		level 6 - system acts only if the user does not act in time
+		action automation
+
+
+	It is discovered that it is possible that a sensor fault leads to the automated system in (b) to
+	incorrectly seize control and apply an incorrect protocol. The system is subsequently modified to
+	merely alert operators of an incorrect action and suggest corrective steps to ensure the appropriate
+	protocol is followed. Suggest three principles from mixed-initiative interfaces that are particularly
+	important for this task and explain how they apply to this particular design problem.
+
+		need to minimise cost of incorrect guesses - would be high if system intervened and caused an accident
+		need to consider user attention - dont distract the operators when they are doing important focused work
+		>>>>> need to allow users a way to terminate the interaction easily - alert should be easy to turn off!!!!!
+
+
+	Two operators are tasked with monitoring the nuclear power plant. One operator is incapacitated
+	due to tripping over a raised threshold and burning themselves with hot coffee in the process. The
+	second operator is busy calling for medical assistance. At this time, the automated system has detected
+	a deviating sensor reading indicating a reactor fault. However, as it so happens, this sensor reading
+	is due to faulty sensor and not due to any actual reactor fault. Nonetheless, since the operators are
+	both either incapacitated or busy, they do not take the actions the protocol dictates for this particular
+	sensor reading. As a result, the automated system issues an alert. As a fail-safe, if the alert is not
+	attending to by either of the two operators, the alert is propagated to a third operator situated in
+	a different location with no possibility to assess whether the sensor reading is accurate or not. As
+	a consequence, the third operator takes an action according to the protocol that results in a nuclear
+	meltdown. State all hazards in this description and draw a fault tree that explains the sources leading
+	to a catastrophic outcome.
+
+		hazards:
+			raised threshold
+			hot coffee
+			injured operator causing distraction
+			faulty sensor
+			3rd operator not being able to see what is happening with the other 2
+			>>>>> inability to identify if a sensor is faulty!!!!!
+
+
+	Explain how a systems approach might have eliminated the catastrophic outcome in (d).
+
+		a systems approach wouldhave hollistically identified the issues relating to communication between subsystems and enabled FMEA to be applied to
+		identify and mitigate the risks during the design process
+		>>>>> and would have considered people's actions within the system!!!!!
+
+
+A patient-controlled analgesia (PCA) pump enables a patient to self-administer pain relief
+medicine. Such a PCA pump is set up by a nurse, indicating medication dosage and schedule among
+other things, and subsequently used by the patient. A support engineer is responsible for ensuring the
+software is up to date and that the settings are cleared between each patient. Research has shown that
+a frequent source of patient injury or death is due to the user interface being difficult to use, resulting
+in the United States Food and Drug Administration (FDA) to specify a set of requirements that a user
+interface for a PCA pump must comply with.
+
+A design team is tasked to create a user interface for a PCA pump.
+
+	Derive a solution-neutral problem statement for this design problem.
+
+		devise a means to allow a patient to control their PCA pump in accordance with FDA regulations and capable of being used by all patients
+		at a certain cost and being compatible with certain systems
+		>>>>> safe!!!!!
+
+
+	Identify a system boundary for this design problem and motivate the choice of boundary.
+
+		patient, pump and medication, user interface and computer running it, power supply, hospital environment and staff
+		>>>>> and regulations!!!!!
+
+
+	Suggest a user-centred design process suitable for this design problem. Motivate the choice of
+	design process with reference to other user-centred design processes that are less suitable.
+
+		huamn factors engineering - very important to consider what human mistakes and slips may occur
+		safety critical
+		more agile/trial and error approach would not be safe
+
+
+	Propose a risk management strategy for assessing, monitoring, and communicating risk for the
+	new PCA pump user interface design.
+
+		HAZOP and risk matrix or FMEA repeated quarterly
+
+
+	One FDA requirement is the following: “Clearing of the pump settings and resetting of the pump
+	shall require confirmation.” Explain why this requirement is ambiguous and raises questions about
+	the user interface design for a PCA pump that are not explicit in the requirement.
+
+		not clear if confirmation is required for clearing pump settings or resetting or both only
+		>>>>> raises questions about the order of those operations and if it needs to be constrained, or what the relationship is between those operations!!!!!
+
+
+design patterns
+	
+	composite
+		
+		allows a group of objects to have the same interface as a single object
+		but can be too powerful - hard to control which objects can be added to a group
+		can client code needs to be able to distinguish groups from induvidual objects eg to be able to add/remove items
+
+
+	decorator
+		
+		allows an object to have additional functionality added while keeping the same interface
+		reduces proliferation of classes, is able to add functionality to all subclasses
+		can have box in a box problem
+		can be cumbersome to add many features to an object with many decorations
+		obfuscates identity of objects - harder to debug
+		>>>>> add behaviour to all classes in a heirarchy without changing base class or subclass code!!!!!
+
+
+	observer
+		
+		allows many different classes objects to maintain a consistent view on the state of an object of interest
+		computational load can escalate if unchecked - if rate of events is high and lots of cimputation results from each event
+
+
+	MVC
+
+		seperates data, management of the data and user's view of and interaction with the data
+
+
+Why is encapsulation important
+
+	hides complexity of implementation of operations but exposes simpler interface
+	allows the system to be viewed at many levels of abstraction
+	makes complexity more manageable
+	allows decoupling which makes extending/modifying software easier
+	>>>>> makes debugging easier!!!!!
+
+
+Why are getters and setters used?
+
+	to implement constraints checking
+	to control concurrent access to data
+	to allow different views into single data source
+	hide actual data source eg database
+		but shouldnt have heavy computation/latency behind them
+
+
+What is polymorphism and how does it help?
+
+	seperates declaration of functionality from specifics of implementation
+	allows a single object to be interfaced with at different levels of abstraction
+		can request the same action to be performed by different objects and it be performed in different ways
+		allows simplifying generalisations to be made and still support different behaviours and implementations
+	increases extensibility of code
+
+

@@ -1,0 +1,268 @@
+
+user research
+	
+strategy
+	bound by what we can learn empirically
+
+quality
+	is the information valid
+		internal validity
+			is the measurement process affecting the measurements
+		construct validity 
+			does the measurement process work
+		statistical validity
+	is the measurement reliable and repeatable
+
+	transparency
+		make the process accessible and inspectable
+	ethics
+		collect data within ethical code
+	
+does it work
+	not doing user research can be seen as unethical
+		may lead to outcomes that hurt the user
+		can also bring economic benefits
+	or
+		can lead to feature creep and incoherent systems that aim to please all users
+		and users also adapt even to bad systems
+
+	inform good designs rather than driving radical designs
+
+interviews
+	speak to people to learn their experiences and goals
+	learning the subjective experience of others
+
+structures
+	structured
+		quantative collects numbers
+	unstructured
+		profile a person
+	semi structured best
+		rough structure but still open to investigate and learn
+
+open ended
+	themes planned, but investigate further
+	aim to remove influence of interviewer
+
+	flexible in content and structure but has a continuity
+	about understanding what the other person is saying
+	full attention needed, and respect always
+
+micro phenomenological interviews
+	for understanding the lived experience of users
+	about 1 experience in particular (micro)
+	what did you feel
+
+	focus on an evocative experience
+	get them to elaborate
+	content free questions
+	no suggestions which could lead
+	no why questions or leading questions
+
+contextual inquiry
+	observe and interview in the moment
+	emphasises realism - close to experience and perception
+	not taking them away from the experience
+	based on specific observations
+
+	context - close to experience - watch people
+	partnership - master and apprentice - researcher is the apprentice
+	interviewer strives to derive meaning and understand reasons
+
+	
+analysis
+	transripctions
+	analysis
+	clarification with users
+	present findings
+
+say do problem
+	is it possible to obtain accurate information about users by asking them
+	not all information can be communicated
+	social reasons - may not want to admit things or embellish them
+
+field research
+	collection of data on users in real contexts
+	minimise bias applied by data collection
+	observe without 
+
+observation
+	collect data on real use
+	minimise interference, etic or outside view
+
+	site of observations
+		where and how to observe people
+	shadowing
+		covert observations
+	data capture
+		structured notes for thematic analysis
+	
+what to focus on
+	eg in hospital very chaotic
+	focus on user research goals
+	also there are frameworks in place to help
+		space physical layout
+		people
+		activities
+		objects
+		acts - things people say and so
+		events - time and sequence
+		goals
+		emotions
+	
+analysis principals
+	need to take notes or youll forget
+	know when to observe and when to note
+	thick description
+	code data after to allow thematic analysis
+	validate the data and conclusions with the users who are implicitly stakeholders in conclusions
+		also provides agency to users
+
+can it inform design
+	provides realism
+		more real than interviews
+	but also harder to draw conslusions
+		all anecdotes
+	more expensive
+	identifies more points that people wouldnt tell you
+	sometimes helps to identify radical new concepts
+	strong narrative power
+		can drive a compelling account
+
+survey
+	design a questionnaire and distribute
+	can ask about anything
+	and is cheap and generalisable
+
+design of survey
+	can measure peoples attitudes
+	can collect qualatitive data
+	descriptive or analytic
+	how should we sample people
+		all sorts of biases arise from it
+		eg timing
+
+selecting a questionnaire
+	hard to come up with a valid one
+	select one instead that has been validated
+		eg nasa task load index
+
+analysis of data
+	remove bad answers using test questions
+	do you delete the whole participant or just the bad parts
+	established questionnaire allows us to do the 2nd
+
+	reliability
+		expect correlations in answers to related questions
+		cronbach's alpha
+	
+unobtrusive research
+	often research makes people unseasy
+	what if we dont involve the users
+	eg app logs and usage data
+	examine posts written on social media
+	or youtube videos
+
+	traces eg log files
+	direct traces caused by user actions
+	indirect traces from observations of users actions - evidence of usage
+	archived data
+
+logs
+	device events
+	UI events
+	app events
+	hard to make sense of the raw data
+
+log study of real world pointing
+
+instrument people and things
+	people
+	things
+	places
+
+archival data
+	content analysis
+	classify content 
+		can allow sentiment analysis or detect frustration
+
+representations
+	how to represent it
+	diagrams models and text
+
+	personas
+		can represent archetypal people
+		can help to understand different types of users
+		should be created systematically
+
+		advantages
+			easier to emphasise things
+			can empathasise
+			avoid self centeredness
+			prioritise data
+		disadvantages
+			hard to create
+			can often dismiss certain user groups
+			generalisation
+			can break connection with original data
+			can lack credibility
+
+	scenarios
+		about what happens
+
+	journeys
+		process of engagement with system
+		series of touch points which are then analysed
+		ensure people aren't leaving due to bad touchpoints
+
+	task analysis
+		steps and goals
+
+	hierarchical task analysis
+		can split tasks into subtasks recursively
+	
+	actors
+		can be anything
+
+	5 context models
+		flow model
+			arrows between actors, flow of info
+		sequence models
+		artefact model
+		cultural model
+			expression of different beliefs
+		physical models
+			models of real things
+
+	rich picture
+		not a system description or solution
+		shows depth and complexity
+		and needs of different user groups
+		shows some of the factors
+		reduce dimensions to key ones
+	
+	requirements
+		user requirements
+		need to be user centered
+		from use cases
+		or from user stories
+
+	what they can and cant do
+		can represent data
+		but need a critical view
+		makes a proposition about users
+		needs to verifiable
+			can cross check with other research processes
+		traceable
+			can see exactly where conclusions came from
+		even wrong user data can help improve designs
+			instrumentalist view - different to realist view
+
+
+
+we are not the user
+combine methods
+generate understanding
+
+	
+		

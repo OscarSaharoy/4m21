@@ -1,0 +1,270 @@
+
+Design
+
+everything is designed
+	dont miss the fact that someone has to think through everything
+	lots of ways to think about design
+
+design matters
+	because people need to use them
+	affects the way we use and remember things
+	makes things usable or unusable
+	small improvements generate huge effect
+
+	catalyst for innovation
+	makes things more efficient and fair
+
+ultimate particular
+	concept or plan that realises idea
+	we can observe how it works with users
+	set your possible worlds
+	new ways of doing things
+
+	people create novel and valuable ideas
+
+design
+	solving problems
+	need decisions and plans
+	to answer thousands of interconnected problems
+	iteration makes it faster and easier
+	optimal design is naive due to tradeoffs
+
+research through design
+	a new design represents new information about a possible way to do things
+
+design has transformative potential
+	can change how people do things
+	new meaning in life
+	solutionism - fixing problems
+	more about enabling new possibilities
+	of how things could be
+
+design probes
+	how do you combine user research
+	send objects to people and ask how they choose to use them
+	enable new ways to interact
+
+design in HCI
+	dont worry about technical details but how to use them
+	and its human centered
+	design decisions are based on understanding users
+	designer is interacting with the artefact using design knowledge
+	knowledge is found iteratively by feedback from users
+
+user centered
+	focus on users goals
+	have user involvement
+	prototyping to evaluate ideas
+		in context
+	hollistic design - think about entire system and lifetime
+
+rationales for design
+	want to improve things
+	want to create new things
+	want to produce new knowledge
+
+problem solving
+	need to figure out problem then solve it
+	identify lots of solutions and evaluate them
+	use experience
+	designers use memory as well as existing artefacts
+	representation
+		frame a problem in the best way to find the solution
+	
+design thinking
+	anyone can do design
+	comes from uk design council
+	double diamond
+	divergent thinking and then convergent
+	discover what can be done - div
+	then evaluate options - conv
+	then think how to develop solution - div
+	then deliver - conv
+
+	creation is divergent
+	evaluation is convergent
+
+value sensitive design
+	want to design things that respect values
+	need to make values explicit so they can be taken into account
+	costs a lot of money if missed
+	need accountability
+	need to measure it and use user research to discover values
+	evaluate based on values
+	lots of designs that shouldnt be done
+	critical design helps identify what should be solved
+
+design cognition
+	convergent and divergent thinking
+	need to know when to converge or diverge
+	problems need to be refined as they are usually ill stated
+	need to reorganise your thoughts eg by sketching
+
+	iteration is needed for a good design
+	tight coupling between problems and solutions
+		a good solution solves a hard problem
+	know when to explore and when to evaluate
+	effect of experience
+		experts often generate less ideas of higher quality
+
+heuristic thinking
+	availability heuristic - what comes to mind
+	heuristics create bias so are bad for design
+	bias gives undue weight to certain ideas
+	and misses others
+	availabilty
+	anchoring
+		dont explore beyond near a known solution
+	decoying
+		cant see solution behind a reference one
+	status quo
+		follow norms
+	bandwagon
+		follow other people
+	
+fixation
+	fixed on a certain solution
+	cant explore around others
+	
+	everyone has it
+	hard to break out of it
+	sunk cost fallacy with a developed idea
+
+	need to try to break it
+	wacky references to inspire new thought
+	creative breaks
+	computational methods
+	inspiration from art/nature
+
+generating solutions
+	need to understand the problem
+	proper problem has
+		design decisions
+		design space
+			set of decisions
+		objectives
+			what makes a design acceptable
+		constraints
+			budget etc
+	need to refine problem to have those 4
+
+	ideally optimisation techniques can be used
+	usually doesnt work
+	many problems are too vague and not formal
+
+creativity
+	element of surprise, novel or insightful
+	biases get in the way
+	need to be both novel and valuable
+
+creative thinking
+	quantity drives quality
+
+ideation methods
+	idea generation methods
+	brainstorming
+		postpone criticism to avoid bias
+		need quantity and range
+		accumulation of knowledge by building on ideas
+		every idea has the same value
+	sketching
+	expansion - generate alternatives
+	then critique
+
+	crazyness - how wide ideas do we seek - more wide but maybe lower quality
+	number of people & moderator - need to make sure people arent becoming biased
+	use of different representations
+
+ill defined and wicked problems
+	design tasks which are ambiguous
+	cant really solve a problem that isnt defined
+	no clear goals and too many constraints
+	fails to capture example solution
+	ill defined problem can be improved
+	wicked problems cant be
+		eg fix poverty
+	
+goal refinement
+	relax assumptions
+	study organisation
+	ensure objectives and constraints are workable
+	and need to make sure everyone is on the same page
+	need to get a stopping rule
+
+sketching
+	convergent and divergent
+	can make a large quantity and refine an idea too
+	clear visual conventions
+	needs to show what is relevant and no more
+
+design practice
+
+design is complex
+	need to stay creative
+	objectives and constraints
+	uncertainty
+	contextual factors
+	starholders
+	multi disciplinary and collaborative
+
+practice of user involvement
+	hard to be user centered
+	8 weeks of observation
+	found
+	need to motivate stakeholders
+	figure out what users need
+	nominate a chamption of user involvement
+	keep users engaged
+	manage expectations
+
+spheres of design practice
+
+prototyping
+	find feasability of ideas
+	present concrete thing to stakeholders
+	different fidelity level prototypes depending on design stage
+
+	low fidelity
+		can make a large quantity and learn 
+	
+reflection and critique
+	designers come together and reflect
+	iterative
+
+collaboration
+	need shared language
+	and to listen to everyone
+
+improving design in organisations: design thinking
+	defining problem is more valuable than trying to solve them
+	early focus on users helps mitigate risk of innovation failure
+	iteration is needed
+
+communities of practice
+	group of people who share an interest and meet to help improve
+	design systems
+		ensure high quality designs
+		frame users values
+
+design process
+
+user centered design process
+	eg waterfall
+		but no iteration
+
+usability engineering
+	lifecycle model
+		helps support and maintain too
+	but doesnt help creativity
+	no theory
+
+	10 steps
+
+agile
+	embrace new knowledge
+
+human factors
+	like usability but focused on safety
+	needed for safety critical systems
+	uses root cause analysis and psychological factors
+	seeks to reduce human error		

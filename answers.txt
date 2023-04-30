@@ -1,0 +1,1112 @@
+
+2 different agile methodologies
+
+scrum
+kanban
+extreme programming
+test driven development
+
+
+iterative
+incorporate new knowledge
+no fixed plan in long term
+system goals not fixed from start
+not as good for delivering to specification
+testing throughout
+
+
+when to use waterfall
+
+core functions of system are critical and must work from day 1
+costs of failure/bugs are high
+conclusions drawn from the system must be reliable
+regulatory framework is stringent
+
+
+waterfall process
+
+system analysis
+implementation analysis
+design
+specification
+implementation
+testing
+installation &
+maintenance
+
+
+waterfall tools
+
+gantt chart
+quality management system
+source code repo
+
+
+what can go wrong with waterfall
+
+misinterpretation of requirements
+may not be completed on time - use good project management tools
+might be hard to use the software - usability testing
+new issues discovered / time estimates wrong
+leave headroom
+thorough planning and prototyping - use cases etc
+repriorisation - request system
+
+
+advantages and disadvantages of CI
+
+adv
+	quickly identify bugs at low cost
+	cheaper to conrinuously check for bugs than to do a big testing effort all at once - would likely require full rewrite
+	can develop to specification quicky and be sure that new changes dont break previous work
+	automated build saves time and removes human error
+	source repo helps to reduce complexity of merges etc
+	better reliability and stability
+dis
+	extra infrastructure, increases build times etc
+	might need to pay more to have someone to manage it
+	takes developer time to write tests and they dont like it
+
+
+development methodology for news site
+
+agile eg extreme programming
+quickly adapt to user needs which always change
+low cost of mistakes
+
+week long sprints to prioritise tasks and reprioritisation every week
+use CI
+incorporate learnings and new user requirements
+no big investment up front
+can deliver new features quickly
+quick builds "10 mins"
+user stories
+test first
+
+
+news website testing strategy
+
+unit tests for simple components of code - avoid risk of small component breakages like buttons and ui flow - automated
+end to end testing by testers to check higher level correctness - mitigate risk that the website is hard to use/inconsistent - check accpetance criteria are met - written from user perspective
+validation testing with user feedback and analytics/engagement - mitagate risk that the overall product is not engaging or misses users needs
+performance - exhaustion testing and performance testing in many user environments
+security testing too - non-functional acceptance tests
+
+
+continuous deployment pipeline
+
+1 - commit, build, unit test, create installers -> store in artefact repo
+2 - longer running tests eg accpetance/regression testing
+3 - staging environment, pipeline branches to enable deployment to user accpetance tests, capacity tests and production - all builds available to testers with options to deploy in different environments
+tools: jenkins, circleCI, travisCI
+advantages:
+	can quickly add features and push to users
+	can easily run A/B tests or partial deployments
+	can quickly roll back if problems arise
+	constant feedbakc from users
+disadvantages
+	bigger upfront investment in infra
+	maintenance overhead for deployment infra
+
+
+example of agile and compare to traditional
+
+	extreme programming
+	weekly sprints vs multi month stages
+	no fixed plan vs fixed plan
+	incorporate new learnings vs plan from beginning
+	continuous testing vs testing phase
+	iterative vs 1 step
+
+
+development methodology for auto car braking
+	
+	waterfall
+	safety critial, needs to work first time
+	specification needs to be perfectly understood from the start
+	testing needs to be completely thorough
+	failure or recall is expensive
+
+
+describe waterfall
+
+	system analysis
+	specification
+		spreadsheet
+	design
+		UML
+	implementation
+		ide, source code management repo
+	testing
+		jenkins
+	maintenance
+
+	gantt chart for project management
+	Quality Management System <---
+
+
+OTA updates
+	
+	would need to maintain multiple versions which would be costly
+	security a major concern
+	safety standards change, will need to deliver same functionality on multiple platforms which will be expensive
+	maintenance is very expensive
+
+
+Concepts behind software engineering
+	definitions
+		software
+			collection of computer programs and related data that instruct a computer
+		engineering
+			the way something has been designed and built
+		software engineering
+			the methods, techniques and tools that could be applied to design, build and maintain the instructions for telling a computer what to do
+
+	computers are everywhere
+
+	engineerning approach - different approaches for different software
+		eg IMVU vs space shuttle
+
+	software engineering started around 1968
+		nato software engineering conference
+		crisis reached already
+	
+	typical software project in 1968
+		system design study
+		system design
+		component design
+		unit design
+		unit development
+		unit test
+		component test
+		system test
+		maintenance and followup
+
+		but already understood that feedback was needed to effectively implement - selig
+	
+	software engineering developed as response to accidents like
+		1991 london ambulance service
+		1985-1987 therac radiation
+		1996 arianne 5
+	
+	complexity of software increases nonlinearly with size
+		and today programs and computers are bigger than ever
+		software is eating the world - marc andreesson
+	
+	process
+		analysis
+		design
+		implementation
+		building
+		testing
+		deployment
+		maintenance
+		
+	requirements analysis
+		hardest part
+		impossible to know everything required to build the system from the start
+		users dont know what it should do
+		developers dont know how it will be used
+		only certainty is that things will change
+	
+	software engineering aims
+		manage complexity and minimise risk
+		meet requirements - known knowns
+		can adapt to changes - known unknowns
+		can withstand the unexpected - unknown unknowns
+		
+		making better mistakes tomorrow
+		happy (alive) users
+
+	no simple answer
+		grow, dont build
+	
+software development methodologies
+	software life cycle
+		analysis
+		design
+		implementation
+		building/integration
+		testing
+		deployment
+		maintenance
+			majority of cost
+
+		maintenance and continuous development can merge into one
+
+	no simple answer
+		but we can
+		build for change
+		communicate clearly
+		choose the right tools for the job
+
+	waterfall
+		analysis
+		requirements/specification
+		design
+		implementation
+		testing
+		deployment
+		maintenance
+
+		from 1970
+	
+		advantages
+			clarify goals early on
+			can charge for appropriate hours
+			can use traditional tools
+			works if its actually possible to define requirements from the start
+		disadvantages
+			iterations are slow
+			lots of time spent on spec that may turn out to be wrong
+	
+	spiral model
+		allows you to manage risk and handle unexpected changes after the project starts
+		handle adverse situations by developing prototypes
+		each spiral is a phase and can have less or more depending on project risks
+		spiralling out, radius represents cumulative cost
+		position around spiral is the progress through the current prototyping phase
+		iterative - multiple spirals
+
+	evolutionary model
+		iterative and incremental
+		each development cycle is a small waterfall
+		hard to use if system cant be segmented into deliverable chunks
+		automated testing made this easier and enabled agile
+	
+	traditional team
+		manager - oversees others, sets work and schedule
+		architect - high level design of system and interfaces
+		lead programmer - implementing complex features and overseeing other programmers
+		programmer - implementing features and unit tests
+		tester - end to end and acceptance tests - designs test processes for the whole system
+
+	tools
+		gantt chart
+			still very common in different forms
+
+	testing
+	
+	bugs stop people from trusting systems and their creators
+
+	five whys
+		keep asking why 5 times
+		get to the root cause of a problem
+			deep fix and improvement rather than just surface level patch
+		lean startup adds incremental proportional investment to make impovements at each level
+		eliminate defect as well as its root cause
+
+
+	issues with london ambulance service
+		specification
+			hard to understand how the software will be used
+			hard to know what the load will be like
+			new features that might be needed
+			what unexpected problems will arise
+
+			scope was too large with no iteration
+			wanted to redesign the whole process
+			users were not consulted
+			no process to make sure contractor understood what was needed
+	
+		project management
+			no iteration
+			no feedback
+			rushed
+			no solid team
+			no experience
+
+		launch
+			step change not gradually introduced
+			no plan for what if things went wrong
+			known issues on launch
+			not tested under load
+			tried to cut cost by reusing hardware
+
+
+	risks with waterfall
+		requirements may change
+		unexpected issues may arise on launch
+		requirements may be incorrect
+		the way the users will interact with the system will be unexpected/unplanned for
+		the load will be too great
+		cost of change is high due to fixed implementation cycle/plan
+	
+	XP practices that arent suitable for medical
+		billing is harder since timescales arent planned from start
+		rigourous safety spec is harder to implement since things can change direction suddenly
+		continuous deployment is not suitable - security and sudden changes in version hard to manage
+		and any change can introduce risk of malfunction so should be carefully managed
+		shared code - some parts of the code should only be managed by experts
+		single code base intractable due to many different hardware versions over long lifetime
+		incremental deployment - too expensive because each release needs to be carefully vetted
+		stories arent enough - need full spec process
+
+	test plan for insta
+		unit tests for each small component eg ui components, upload flow and backend logic
+		integration tests - make sure that different parts of the system interact correctly - eg make sure the image data can be passed between classes after being taken
+		hardware tests - running on phones and emulators, making sure photos can be taken etc
+		validation and verification (end to end tests) - human testers making sure they can go through all the use cases of the app or automated if possible
+		performance tests - eg sending many requests to the endpoints and making sure they can handle it
+		usability tests!! acceptance tests - make sure a certain change has not led to decreases in usership / engagement or interviews
+		regression tests - make sure a change hasnt led to a drop in performance
+
+	fix the support url
+	setup the url
+	make sure there is a process to help the development team not forget things like that - task management system
+	add tests before the form is fully submitted
+	give the person who manages it some help / make it a team effort
+		or automate the process to elimanate human error
+	
+	key stages in software lifecycle
+		exploration and analysis
+			learn about the context and discover what is needed and how to design it
+		requirements
+			specify exactly what is needed
+		design
+			decide how to make it happen
+		implementation
+			create systems according to the design
+		integration
+			slot together all systems
+		testing
+			make sure the specification is implemented by the implementation
+		launch
+			get it out there to the customers
+		maintenance
+			make sure it keeps working and fix any issues - 90% of cost
+
+	hotel search ranking 5 whys
+		why was the number of visitors decreasing
+			because the site wasnt indexed
+		why wasnt it indexed
+			becasue of the change
+		why was the change made
+			
+
+	testing strategy for hotel reservation site
+		risks
+			ui will break and be unusable
+				component tests for ui and in app flows
+			ui will be hard to use
+				validation testing with testers or beta release to get feedback on changes or AB testing
+			hotel booking api connection will break
+				automated testing hourly and on push for api breakages
+			performance or security will be bad
+				non functional acceptance tests for those things, scalability security etc
+
+	how to implement CICD
+		need a pipeline and source code repo
+		automated build and reporting system
+		push -> unit tests -> easier to find and fix bugs and happier working at velocity
+		push to staging -> unit tests -> longer running eg nonfunctional tests, regressions -> staging with human testers -> automated deploy
+		can have automated update in apps, eg electron
+		break slow yearly release cycle, integrate maintenance and development, get feedback from users faster
+	
+
+	waterfall
+		specifications clear from the start
+			need to spend a long time understanding them
+		works well with traditional project management tools
+		medical certification easier to acheive
+		methodical, extensive testing can be conducted before release
+		less versions to keep track of
+		name steps
+	
+		not appropriate for messaging platform
+			expensive to introduce changes/deviate from spec
+			need to integrate new feature requests and new priorities from user feedback
+			not safety critical
+			impossible to know requirements before!!
+			need to keep evolving
+
+	agile
+		shared scr
+		iterations every week, daily release even
+			faster feedback, can improve faster
+			but more chance of bugs arising
+			can implement new learnings faster
+		user stories
+			can help pin down most important use cases and 
+		no big investment up front, can release mvp
+		test as you go to implement faster
+		but not work with traditional project management
+		more implementation and maintenance overhead eg with auto deployment
+		more expensive
+		incremental deployments to test changes!!!
+		testing in clone of prod env!!!
+
+	testing
+		AUTOMATED unit tests for ui and logic which could mess up and make app unusable
+		automated regression too
+		AB/acceptance testing with analytics to see if people are engaged after a change
+		nonfunctional testing for security and performance
+		verification testing against requirements with e2e testers
+		test as early as possible eg TDD
+
+interfaces
+	interfaces are abstract classes that define the behaviour of an object without defining data
+	can easily inherit from multiple interfaces without multiple inheritance confusion
+	can specify two different ways a single object can be used, eg a complex number can implement ISquareable and IMultipliable
+
+class diagram
+	diagram in UML that shows the classes in the system, their data and behaviours (methods) and the relationships between them
+	relationships shown by lines eg inheritance, ownership and belonging
+	but doesnt show how data is transferred between them in time
+	so can use a sequence diagram for that - shows methods and how they are called between objects over time
+	
+define refactoring
+	changing implementation to simplify logic without changing behaviour or interface
+	pow
+
+Team
+	manager
+		oversees team, makes sure on schedule and prioritises work
+	architect
+		decides on system design and interfaces
+		designs modules and is usually subject expert
+	lead programmer
+		30% time managing other programmers, making sure they are on track
+		implementing complex features
+	programmers
+		implementing features and writing unit tests
+	testers
+		designing tests for overall system
+		end to end testing
+
+development methodology
+	waterfall
+		analysis and exploration
+		specification
+		design
+		implementation
+		integration
+		testing
+		deployment
+		maintenance
+		
+	can know requirements from beginning
+	can predict time required and charge easily
+	can perform safety analysis in 1 go simply
+	can test thoroughly before release
+	can use traditional project management
+	
+
+what can go wrong with waterfall
+	changes are very expensive - risk that something will be missed
+		so ensure requirements are correct from start
+	time estimate could be wrong - add spare time
+	important requirements might not be met
+		clarify requirements and ensure flexibility
+		expert advice
+	might not perform in real world conditions
+		performance and load test - test in as close to real world env as possible
+		integration testing
+		verification and validation testing
+		usability testing
+		nonfunctional testing
+
+
+Class and Object
+	a class is a logically induvidual component of the system
+	class defines data and behaviour, encapsulated within the methods and attributes of the class
+	the class provides abstraction
+	an object is an instantiation of a class
+	two objects of the same class with the same data behave the same
+
+
+drone delivery
+
+
+agile
+	extreme programming and TDD
+	test early and often, even test first vs test all at once at the end - but can be harder to test for safety critical applications
+	CI/CD & shared code ownership in source code management repo vs manual deployment and no central source code repo
+	iteration and weekly sprints incorporating new knowledge vs plan first and then do everything
+	spec evolves over time with task backlog vs spec is decided at beginning
+	harder to bill and use normal project management tools
+
+zebrafish
+	waterfall
+	needs to work from the start - human genetic diseases is safety critical
+	medical spec is known from start - not like users are unknown
+	billing may be important to nail down at the start
+	if something is missed it would be bad so need to analyse requirements carefully at the start
+	cost of breakage is high!!!
+	medical software has tight regulation so rigourous testing will be needed
+
+waterfall
+	exploration and analysis
+		learn more about subject and how to approach project
+	specification
+		define what is needed from the system
+	design
+		decide the architecture of the system
+		UML
+	implementation
+		work on the code
+		SCM eg git
+	integration
+	testing
+		JUnit
+		Quality Management System
+	deployment
+		TravisCI circleCI
+	maintenance
+
+	project management
+		gantt chart
+
+
+what could go wrong
+	requirement is missed
+		rigourously go over them
+	timelines are too short
+		add extra time
+		use proper project management
+	could fail regulation tests
+		do medical regulation spec analysis
+	performance might not be good
+		performance testing in real env
+	requirements not known at beginning
+		use iterative approach
+	might be hard to use
+		usability tests
+	requirements might be misunderstood
+		testing strategy designed alongside experts!!!
+
+perceptual tasks
+	shadowy character friend or foe - recognition
+	finding flight on board - search
+	tremble in pocket, is it a notification - discrimination
+	is it close enough in VR - estimation
+	circle with cross, does it close the window - detection
+
+different senses
+	vision - fast and high bandwidth but takes attention away from road
+	hearing - fast but not as accurate, and could get in the way of eg. talking in the car as it is low bandwidth SERIAL
+	tactition - ok but not accurate enough, requires physical contact
+
+fitts law
+	all 1
+	doesn't account for physical size of screen and targets, just the ratio d/w
+	fitts law is only valid in certain ranges of D & W
+
+hick hyman law
+	1.36s in heterogenous case
+	2s in homogenous case
+
+	when there is prior knowledge about which choice is likely to come up this helps accelerate reaction
+
+
+typing on small keyboard with pen
+	different colours would help with recognition and search but that is not the issue, the issue is fine control over the pen
+	fitts law is independant of colour?
+
+
+objective function for keyboard layout
+	use fitts law to estimate movement time
+	take sum of movement time between all keypairs weighted by frequency in english language
+
+	additional design objective
+		take solution which is closest to qwerty layout?
+		additional objective to make the layout easier to learn
+
+collaborative whiteboard
+	2 axis model of collaborative technology
+		synchronous and colocated but can be a bit asynchronous
+		people are in the same place and can look at the same thing at the same time or different things at the same time
+
+	reality based interaction framework
+		exploits how people have awareness and skills associated with
+			their bodies
+			their proxitimity to others
+			their social environment
+	
+	allows insights at many levels of abstraction
+	allows analysts to understand only what is relevant at a given time and drill down on details as needed
+		so focuses analysis more effectively
+	and allows many people to do it at once, seperately or together to optimise the assignment of cognitive effort
+
+	articulation work
+		allows users to divide and cluster, then focus in on tasks and subtasks very effectively
+		automates and supports this by adjusting based on user location
+		but may also add to this work as people need to walk around to see different things and dodge around each other
+		and people need to work together to set the visualisation
+
+	awareness
+		visual feedback of what someone else is looking into at any time, and ability to join in with them combined with social proximity giving good awareness
+		ability to speak and interact adds to this
+	
+	boundary objects
+		ability to change which objects belong to induviduals and groups at any time, adding flexibility but maybe losing grounding
+
+cooperation
+	division of labour
+	
+collaboration
+	cooperation and 
+	shared goals, understandings, vision and ways of working
+
+
+auto online parking app detection
+	system boundary
+		app and phone
+		phone gps/sensors
+		user
+		car
+		LEGISTLATION?!?!
+	
+	type and level of automation
+		level 4 - suggests 1 alternative action
+		decision automation
+		not fully autonomous but is up to a point of offering something to the user but not actually eg paying for parking automatically
+	
+	how to evaluate the automation
+		does it reduce the mental workload, or is there an easier to use alternative already
+			eg qr code on ticket machine vs potentially confusing or wrong suggestion
+			or if it happens at the wrong time
+		situational awareness
+			does it distract from driving, maybe
+	
+	evaluation from mixed inititive interface perspective
+		value added - alternative may be to get out and search for ticket machine which could take a while
+		considering uncertainty - maybe the car is just dropping someone off and doesnt need to park, this isnt considered
+		mindful of user attention - users attention is off the phone while driving, should integrate with apple carplay to acheive this
+		minimise cost of poor guess - cost is minimal as it will just be ignored
+	
+	risk assessment
+		very low risk so can use swift
+		quick
+		asks what if this happened, identifies risk and an appropriate way to mitigate it
+		result is a risk ranking and next steps
+	
+		
+childrens multiplication tables app WITH ROCK BAND
+	how is the design supported by self determination theory
+		view of people as active organisms aiming for self growth, mastery and fulfillment
+		autonomy
+			can progress at own rate and make own decisions about own band
+		competence
+			progress is rewarded and stated front and centre, can feel the effects of increasing mastery
+		relatedness
+			sense of belonging - class all doing it together, can share band choices etc
+
+	mistake vs slip
+		slip is correct intention, wrong execution <- doesnt indicate more learning is needed
+		mistake is wrong intention, correct execution <- more learning needed
+
+	type of behaviour
+		initiallly knowledge based - user needs knowledge to parse UI and find relevant info, then figure out how to use that to answer the question
+		then rule based as the result is related to the prompt by the multiplication rule
+		then skill based as the answers become memorised and actions reflex based
+	
+	risk management strategy
+		5 steps!!!
+		1-4 are swift
+		5th is repeating swift often
+		
+		low risk, no real harm so SWIFT
+		risk matrix for interpretation
+		get group, ask what if, figure out hazard, risk, mitigation
+		result in next steps
+
+		1: identify hazards
+		2: estimate risks
+		3: evaluation of accepability of risks
+		4: reduce risks to acceptable levels
+		5: monitor risks on an ongoing basis
+
+		HAZOP
+
+user interface for embedded devices firm
+	priniciples for formulating reserach strategy for user research
+		need to understand the users and their use cases
+		not based on opinions, you are not the user
+
+		bound by what we can empirically learn
+			base strategy on goals - what we want to learn that is possible to
+		trade off conflicting criteria
+			realism - make it as close to real user experience as possible, but then hard to do controlled experiments
+			precision - control irrelevant variables as much as possible while collecting as much accurate and detailed data as possible
+			generalisability - make sure findings also apply to other users
+		triangulation
+			combine multiple research methods to study the same phenomenon - makes up for where the above may be lacking in different research methods
+
+	is the method sound
+		survey will suffer from say do problem
+			and many biases hurting validity
+		uk only investigation may not generalise to other groups - external validity
+		analysis may not be transparent
+		no tringulation!!!
+
+	contextual enquiry
+		watch the user use the system and ask about things that were unexpected
+		watch people working, but dont let that affect their usage
+		by watching them you can see how they would like to use the system and where differences are between their expectations and the current implementation
+		derive meaning from interviews -> next steps
+
+	say do problem
+		what users say they do isnt always what they do
+		not always aware of how they use the system and what goes into it
+		tacit knowledge
+
+		limited by contextual enquiry
+		direct causation of feedback from usage
+
+
+consulting communication platform
+	personalisation vs tailoring
+		personalisation is nonfunctional adaptation
+			changing appearance eg fonts and colours
+		tailoring is functional adaptation
+			changing functionality eg larger buttons for people with reduced motor control
+	
+	appropriation
+		needs and situations change over time so there will be new use cases that weren't planned for
+
+	appropriation moves
+		secure messaging will be more awkward, possibly people will stop using it to save time
+			visibility into how the messaging is secured will make the obtruse UX less grating
+			and increase trust
+		need to allow interpretations
+			avoid fixed meaning, encourage users to add their own meaning
+		provide visibility into system, expose intentions
+			to help people understand how to develop appropriations
+		support not control
+			enable flexibility to make the tool useful in more environments
+		
+
+device to control humidity in home
+	
+	+-
+	___
+	v  |
+	manual <--| +-
+	|         |
+auto|----> automatic
+			|   ^
+			|___|
+			 auto
+	
+	gulf of execution
+		need to know that pressing + or - will change the logic of the controller which may be unclear
+		gulf of evaluation - need to know if in auto or manual when swapping back to auto, and which way to change the target otherwise
+			but an indicator would help tell the user
+		need to make the actual and target values visible to the user to reduce gulf of evaluation of if the user needs to press + or -
+		
+	automation
+		level 2 as it offers manual and auto and you have to pick
+		action automation
+	
+	mixed intiative
+		not really as it doesnt infer the users goals it just gives options
+		system does not take the initiative to initiate automation
+	
+	notational
+		viscosity - can change with 1 button press
+		visibility - all options availible are visible at a time
+		premature commitment - not really a factor as any button press can move between states
+			only one is that a press to auto will discard previous edits to manual target temp
+		hidden dependancies - hard to understand connection between target temperature and actual temperature
+		role expressiveness - all buttons can be understood easily
+			not obvious that there are two states though
+
+
+spreadsheet assistant
+	automation
+		level 4 or 3 or 2
+		response automation
+
+	evaluation criteria
+		mental workload - if the assistant can't help, it becomes a burden rather than a help
+		skill degradation - people may become unable to make visualisations without the assistant
+		reliability - needs to have a high true positive rate
+		cost of action outcomes - a bad suggestion costs time
+	
+	is it adhering to principles
+		value added - yes
+		uncertainty - hopefully
+		attention - not a huge issue
+		employing dialog - yes because you can click on it and start a dialog
+		direct trigger - yes
+		LEARNS FROM INTERACTIONS
+	
+
+precise inputs
+	inputs must be closed loop for precision, so need feedback
+	input device is not sufficient, also need extra UI like confirmation dialog, logical checks to ensure valid inputs etc
+	providing numbers: tactile scrollwheel maybe with physical numbers on it
+	providing text: keyboard with very clear keys and easy to use
+	cursor: mouse, maybe a heavy one
+	CERTAIN INTERACTION
+	output devices, interaction techniques and workflows are also needed
+
+systems in systems
+	fall detector in hospital
+		hospital system
+		human body
+		system of staff responding to incidents
+	music app
+		music industry system
+		internet system
+		phone system
+		personal media consumption/attention system
+	VR headset
+		bodily systems eg balance and vision
+		driving computer system
+		system of cables/wireless connections
+		system of room/space its being used in
+		system of app/game development
+	spreadsheet used to record grades
+		computer system
+		system of examination scheduling, marking techniques, mark normalisation and confidentiality
+
+vim
+	the object of interest, the text, is visible
+	actions are very rapid and very easily reversible, and are sometimes incremental, sometimes not eg dgg
+	pointing action to replace typed inputs i laugh
+	each time a command is input there is feedback of the result on the bottom bar
+
+
+controlling heating and cooling
+	not well defined, there are many ways to heat and cool a home and its not clear what is important in a potential solution
+	design decisions, design space, constraints and objectives
+
+
+autocorrect user research
+	log file analysis - collect data of usage and see how many times users go back to autocorrect
+	ensure anonymity
+	not interviews - tacit knowledge
+	unobtrusive
+	direct traces of typing inputs
+
+	could use a survey but would be skewed by responder demographic and would suffer from say do problem
+
+within subjects
+	there is unlikely to be a learning effect of one part of the experiement on the other
+	keeps number of participants smaller
+	induvidual error is controlled within each participant
+
+
+threats to external validity
+	sentences may not be representative of things that people really type
+	maybe the device used is not common/representative
+	participants may not be representative of user groups
+
+threats to internal validity
+	confounding variables like maybe certain sentences are
+
+
+closed loop control
+	feedback so slower
+	but can be more precise
+	used for unfamiliar tasks
+
+open
+	no feedback required
+	faster but less precise
+	learned actions 
+
+pie menu vs marking
+	same concept but marking menu has delay before displaying allowing for learning of closed loop actions to evolve into open loop gestures
+
+marking menu vs dropdown
+	dropdown more familiar and can utilise key shortcuts
+	marking supports automatic learning and can be faster, with a lower skill floor and higher ceiling
+	marking can become open loop
+	marking seems to be more accessible
+	but is primarily for pen input devices
+	dropdown menus can have more commands per level
+
+dropdown menu steering vs crossing
+	if the submenu disappears when you leave it thats steering because you need to steer the pointer inside the menu
+	if its when you cross into to supermenu its crossing
+		pointer can leave the tunnel constraint
+
+
+klm goms
+	press button - B = 0.1s
+	select option in menu of N items - C(N) = 0.2N
+	
+	register beep - R = 0.4s
+	speak a command - T = 1s
+
+	option 1:
+		0.1 + 0.2*5 + 0.2*2 = 1.5s
+	
+	option 2:
+		0.1 + 1 + 0.4 + 1 + 0.4 + 1 = 3.9s
+
+klm goms
+	assumes error free expert behaviour - sometimes the user may need to undo an input
+	ignores learning curve effect of improving time with usage
+	not all tasks take equal time eg pointing depends on distance
+
+	
+problem statement for blast helmet
+	a system that will automatically report risk of explosion injury to soldiers in a battlefield following a blast
+	
+system boundary
+	user, helmet, explosion and environment, medical/triage response
+
+
+agile vs waterfall
+	and
+	not work with traditional project management tools
+	harder to bill maybe
+	harder to get regulation certified
+	not good for safety critical systems
+
+testing
+	also need usability testing to see if real users can use it
+
+function structure diagram
+	in
+		pressure
+		user details
+	out
+		injury risk info
+
+	blocks
+		pressure sensing
+		analysis of injury risk
+		output system
+		and supply energy
+
+morphological chart
+	
+	sense pressure
+		pressure sensor
+		microphone
+		paper discs
+		glass ampule
+	analysis of injury risk
+		microchip
+	communicate injury
+		light
+		siren
+		radio message
+		sms
+	supply energy
+		battery
+		solar panel
+
+
+wicked design problem
+	making progress is impossible due to being so ill defined and interconnected with other issues
+	impossible to identify a well-defined design task
+		goal refinement not possible
+	so open of a problem that there is no constraints or design space
+
+refined design task
+	devise a means for the government to reliably communicate with families
+	
+rich picture
+	families
+		fathers not paying
+		children
+			daycare expensive
+	benefits
+		slow and bureaucratic
+		rules that can make you lose benefits
+	landlords
+		profit driven
+		not driven to improve conditinos
+	shelter	
+		limited options
+
+fieldwork
+	minimises bias
+	can capture real scenarios
+	need to interfere as little as possible
+	but also collect data
+	need to make good notes
+	contextualised and actual
+	hard to generalise from specific observations
+	time consuming and costly
+
+
+validating fieldwork
+	get findings
+	then ask users if it makes sense to them
+		surveys, interviews
+	but surveys can be biased
+		especially nonresponder bias
+	interviews can be used to triangulate findings eg with contextual enquiry
+	unobtrustive research is eg. searching through historical records and statistics
+
+
+risk
+	there is always a chance the system will not behave as expected
+	risk is a pervasive property of a system
+
+mixed initiative interface principals
+	minimises the cost of poor design decisions
+	scopes precision of service to match uncertainty
+	collaboration - machine suggests to operators and they work together
+
+
+class & object
+	class is a logical component / key concept of the system defining data and baheviour with a certain interface
+	provide abstraction and decouple different parts of the system
+	object is instantiation of a class, two objects of the same class with the same data behave the same
+
+
+agile example
+	extreme programming
+
+	fast build - 10 mins vs little focus on build performance
+	test early test often vs test in 1 phase at the end
+	scm and shared code ownership vs unstructered approach
+	user stories vs fixed specification
+	iteration vs 0-1 development
+	continuous deployment vs deploy in 1 go
+
+	hard to charge and get regulatory approval
+	not good for safety critical applications
+	traditional tools might not work with it as well
+
+
+waterfall
+	safety critical, needs to be tested thoroughly
+	specification is known from the start
+	easier to bill
+	easier to manage a single version of the code on each car rather than continuously deployed
+	important to analyse system carefully at start to avoid future safety issues
+	very high costs of recall!!
+
+	
+	analysis
+		understanding how the system will fit into surrounding systems and what it must do
+	specification
+		specify exactly what is needed from the system and how it can acheive its aims
+		in accordance with regulations
+	design
+		decide on architecture, interfaces and technologies for the system
+		documentation of the design is created
+	implementation
+		write code and create infrastructure for the system
+	integration
+		connect all the parts of the system together
+	testing
+		ensure the system is functioning correctly
+	deployment
+		launch the system and onboard users
+	maintenance
+		maintain and fix bugs and add required features to the system
+
+	gantt QMS SCM
+
+
+ota updates effects
+	recall less likely - could save money
+	security will be a larger consideration
+	maintenance overhead of ota system will add to costs
+	keeping track of different implementations on different vehicles will be costly - technical debt will be accumulated
+	maintenance and implementation for new vehicles blends together
+	will need to be in accordance with safety standards which may change over time
+	
+
+
+

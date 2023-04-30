@@ -1,0 +1,186 @@
+
+nielsens heuristics
+	current state should be visible to user
+
+input
+	direct control
+		eg touch screen
+		implement directly contacts screen
+		light pen
+		resistive touchscreen
+		capacitive touchscreen
+			allow multitouch
+			better response time
+			worse precision
+			need processing
+
+	diamondtouch
+		people touhcing screen on table
+		touching screen closes a circuit
+		capacitances from the table/finger and chair in series
+		antennas in table
+	
+	frustrated total internal reflection
+		edge lit pane
+		angle set up so that the light is trapped inside
+		when you touch it you frustrate the light and it can escape
+		detect using computer vision
+
+	indirect control
+		mouse or touchpad
+		C:D ratio is ratio of eg mouse movement to pointer movement
+
+	uncertain control
+		not certain of user intention
+		eg accelerometers
+		eyebrow switch
+
+	eye tracking
+		estiate users gaze by monitoring eyeball
+		can use camera but need callibration
+		can send IR light towards eye and is then reflected in a certain way that can be recognised
+	
+	hand and finger
+		can put instruments on fingers
+			markers on fingers tracked by cameras
+		lab experiments only
+		hand tracking by computer vision or depth camera
+		can create hand skeletons as a low dimensional representation that can be used
+
+output
+	displays
+		multi displays
+		multi modal displays
+		tactile display on tongue
+
+	visual encoding
+		how to communicate variables to user
+		visual marks
+			points lines areas
+		visual channels
+			relative position colour shape orientation
+
+	haptics
+		can touch and feel
+		forces on body
+		vibration
+		or force feedback
+	
+	exoskeleton gloves
+		motors work against muscles
+		to give resistance
+		monitoring finger movements
+		simulated normal force
+		can also feel squishyness and bounceback
+
+		can also be grounded to simulate gravity
+
+		telerobotics
+			training medics or military
+		can also give haptic guidance for the blind
+			helps find and avoid things just out of reach
+			camera tracks objects using internal simulation and tactor shows proximity to objects
+
+interaction
+	a computation that couples input and output
+	performance experience learnability mobility ergonomics accessibility
+
+bubble cursor
+	big cursor to increase W in fitts law
+	but area cursor can select multiple
+	bubble cursor computes voronoi tesselation
+	cursor grows to encompass only 1 target
+	but too many targets on screen at once to be useful
+
+pie menus
+	can also be nested
+	press a button then sliding selects
+	limited by number of slices
+
+marking menu
+	refinement of pie
+	continuous transition
+	push down to open menu
+	unique trace for each selection
+	recognises traces as user learns the gestures naturally
+	natural transition from closed to open loop control
+
+text entry
+	want to make it intelligent
+	word prediction etc
+	crowdsourced study
+		2 thumb typing is fastest
+		costly to correct errors
+		also about visual control
+		many users struggle with keyboards
+		
+	gesture typing!!
+		allows memory of gestures for each word
+		always there is some motor memory consolidation
+		not looking at keys = open loop
+		even works with scrambled keyboard
+		starts easy and this helps consolidation
+	
+
+commands
+	command naming
+		used to be area of research
+		hard to consistently name commands
+	polysemy
+		same word may mean different things to different people
+	context
+
+	ellictation study to get suggestions or pick names from peoples daily lives	
+
+CLI
+	prompt command parameters
+	hard to name commands
+	parameters are syntax - can be hard to learn and use
+
+	how do you know which commands are available
+	and name them
+	how can people learn commands
+	recall of parameters and syntax
+	transparency - need to give feedback during operation and interpretation
+		need to know what is acheivable and diagnose why something might not work
+
+hypertext
+	clickable links
+menus
+	good for explorability but bad for expert performance
+	so use shortcuts but hard to learn
+		studies show most people dont use them
+
+notational systems
+	eg a spreadsheet  which has a certain syntax
+	controls for central heating, google nest
+
+	incrementation
+	transcription
+	modification
+	exploration
+	search
+	exploratory understanding
+
+ring to control central heating
+	stroke ring to control heat
+	feedback through lighting
+	normal lighting is proportional to current temp
+	poor visibilty
+	mapping is close and far from the task
+	roll expressiveness is unclear
+	sets temperature in future
+	so there is a  hidden dependancy (target temp rather than current)
+
+GUIs
+	first xerox wimp
+	why is it organised that way
+	can have physics based GUI desktop - bumptop
+	visibility
+		what you see is what you get
+		see as it will be printed
+	visibility of commands, status and dependancies
+		eg color coding on excel cells
+	consistencu
+
+

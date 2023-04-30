@@ -1,0 +1,277 @@
+
+Driving while using phone
+	sharing attention
+	less fine motor control
+	less thinking - based on icon recognition
+	basic psychological needs
+	immersion is less, easy to jump in and out
+	communication?
+
+game
+	dedicated attention
+	fine motor control
+	keep track of game state etc
+	very immersive experience
+	communication with other players & inference of other players goals
+
+types of understanding
+	theories
+		constructs and relations
+		help explain
+	concepts
+		name phenomena
+		& how to identify
+	taxonomies
+		system of elements or mechanisms
+	models
+		simplifications of reality
+		to make predictions
+	guidelines
+		theoretical knowledge distilled into something actionable
+		rules of thumb
+
+areas of understanding
+	perception
+	motor control
+	cognition
+	needs
+	experience
+	communication
+	collaboration
+
+HCI values actionable knowledge
+	knowledge: explaining and predicting how people use computers
+	considering what to build
+	investigate impacts of a system on eg a community
+
+understanding of people can
+	direct our attention
+	explain empirical findings
+	make design decisions
+	explore a design space
+	predict people's behaviour
+
+perception
+	allows user to determine input
+	and allows UI to give feedback to user
+
+	comes from
+		expectation
+			estimation based on previous experience
+		attention
+			decide which sensory information to consider
+		sensory information
+			recognise changes in environment
+	
+	transduction
+		mechanical
+		chemical
+		photo
+		
+		vision
+			high bandwidth
+			parallel
+		hearing
+			serial
+			faster than others
+		tactation
+			limited to areas of physical contact
+
+	need to consider
+		information rate
+		parallelism
+		sensitivity
+		receptive field
+		adaptation
+			tuning out noise
+
+	perceptual tasks
+		discrimination
+		detection
+		recognition
+		estimarion
+		search
+	
+	visbility
+		wavelength
+		field of view
+		contrast
+		foveation
+	
+		these limit eg looking at a smart watch while tying shoelaces
+	
+	eye movement
+		fixations
+			stabilisation on target
+		saccade
+			ballistic leap to next target
+		smooth pursuit
+			special case movement without ballistic leap
+
+		tracking smooth pursuit can be a selection technique
+	
+	perceptual organisition
+		figure & ground
+		person is figure, background is ground
+
+		visual groups
+		related objects
+
+		visuospacial hierarchy
+		regions
+		visual groups
+			gestalt rules
+				proximity
+				common area
+				similarity
+				continuation
+
+	attention
+		focus processing on an area
+
+		selective attention
+			move attention around
+		vigilance
+			sustained attention
+		divided attention
+			many at once
+
+		change blindness
+			harder to detect blindness during visual disruption
+		inattention blindness
+			failure to detect changes when attention is not directed there
+
+	saliency
+		which features are most likely to attract attention
+	
+	clutter
+		when everything tries to be salient
+	
+		test:
+			how hard is it to add something that stands out
+
+Motor control
+	regulation of movement
+
+	use of motor control
+		can modify GUI to match motor control of user
+		dynamically adjust ui to aid motor control
+		different keyboard layouts
+	
+	end effector
+		something I can control eg eye, arm
+	degrees of freedom
+		how many ways we can move end effector in 3d space
+	open loop - no feedback, fast
+	closed loop - uses feedback so slow
+	speed accuracy tradeoff
+		higher speed inputs have lower accuracy
+
+	fitts law
+		movement time = MT = a + b * index of difficulty
+		index of difficulty = ID = log( D/W + 1 )
+
+		D is distance
+		W is target width
+	
+		can be used to compare input devices
+		throughput
+			ID / MT
+			or 1 / b
+
+		also applies to crossing task
+		different equation for tunnel steering task
+			movement speed proportional to tunnel width
+
+		crossing many targets of a certain width is the same as tunnel steering
+
+	simple reaction
+		reaction time = decision time + nondecision time = decision time + x + y
+		x = perceptual diffusion
+		y = motor response
+
+	choice reaction
+		may need to react to n triggers
+		open loop
+		time taken = bH
+		H = entropy of decision
+
+		if all are equally likely
+		T = a + b log2 n
+
+Cognition
+	relavant capabilites
+		control
+		memory
+		attention
+		reasoning
+		decision making
+
+	sets goals and maintains focus
+		goal is a desirable state
+		memory not accurate, its useful
+
+	limited
+		spatially
+		limited memory
+
+	based on internal models
+		bad model - can be tricked
+		but can be used to eg metaphors
+		internal model leveraged to enhance HCI
+
+	cognition constantly adapting
+	can requires effort
+		task effort and state effort
+		energy saving mechanism
+
+
+technology is driven by needs
+	social relationships
+	purpose and direction
+	novelty
+	ability to perform well
+	recognition
+	security
+
+	self determination theory
+		needs are motivational
+		self growth
+		people actively seek new opportunities
+	
+		needs:
+			autonomy
+			competancy
+			relatedness
+
+		can be used to motivate users
+		needs lead to actions, can provide offerings based on users actions, motivations and needs
+	
+collaboration
+	everything is collaborative
+	"a mutually beneficial relationship between two or
+	more parties who work toward common goals by sharing
+	responsibility, authority, and accountability for achieving results"
+
+	cooperation
+		division of labour
+	
+	axes:
+		synchronous or asynchronous
+		colocated or remote
+	
+	also depends on scale and community of practice
+	nascence
+	permanance
+	turnover
+
+	people form territories
+		can be reflected in UIs
+
+	articulation is just as important
+	awareness too, knowing what others are doing
+	and boundary objects like whiteboards that drive the activity
+
+	shared understanding
+	grounding to create shared knowledge
+	theory of mind to infer how others are feeling

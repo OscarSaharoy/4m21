@@ -1,0 +1,132 @@
+
+4m23 Lecture 3: Intro to UML
+
+UML can be used to examine systems at different levels of abstraction
+3 different notations
+	booch method
+	object oriented software engineering
+	object modelling technique
+
+communicate structure - classes and relationships
+and behaviour - how they interact
+	sequence and communication diagrams
+
+different modes - AsSketch most common
+
+class diagram shows the classes and their attributes and relationships
+
+	Bank
+	|manages
+	0..* Account
+	| owns 1..*
+	| owned by
+	1 Person
+
+each class is a box containing
+	Name eg Date
+	Attributes/data eg -day: int
+	Operations/dehaviour/methods eg +get_day(): int
+	+ public, - private
+
+or UMLAsSketch:
+	1 lower box with getters and setters with Capital eg Day
+
+Right level of abstraction:
+	could remove accounts as unneccessary
+
+	Bank
+	|manages 
+	1..* Person
+
+
+Can also use Association to represent attributes
+	shown by arrow
+
+	VideoFrame ->1 Time
+	
+	line shows association which is
+		directional
+		meaningful
+		constrained - number defines multiplicity eg 1 or 1..*
+	
+	bidirectional also possible
+	both sides know about the other
+
+	Lecturer <-> Course
+
+	only included if meaningful
+
+Composition
+	
+	filled diamond
+	House <>-- Room
+
+	means room cannot exist without the house
+
+Aggregation
+
+	empty diamond
+	Society <>-- Student
+
+	destroying society does not destroy students
+
+Inheritance
+	empty triangle
+
+	Shape {abstract}
+	+ draw() {abstract}
+	^
+	|
+	Ellipse
+	+ draw()
+
+	class name in italics means the class is abstract
+	shape is virtual/abstract method
+	any subclass of shape can have .draw() called on it but must implement since Shape.draw() is virtual
+
+Interfaces
+	implementation inheritance
+		superclass implements some functionality
+	behaviour inheritance
+		class exposes some functionality
+	lollipop can be used to define behavioural inheritance
+	
+	o------------[stack]
+	iterator
+
+	or
+	
+	<<interface>>
+	Iterator
+
+	or
+	IIterator
+
+	an interface is a purely abstract class that defines behaviour
+	a class can implement many interfaces
+
+Interactions
+
+	Sequence and Collaboration diagrams
+		Seqeunce for timelines
+		Collaboration/Communication for the nature of interactions
+
+	Sequence shows interactions over time
+		time flows downwards
+		boxes represent method calls duration
+		can also omit boxes and returns
+		good for a few objects only
+	
+	Communication diagrams show the method flow between objects by method function calls
+		capture both dynamic behaviour and are easier to read with a few calls
+	
+	State diagrams
+		shows internal state of single object
+		and transitions between states
+
+UML Summary
+	good to capture, share and validate designs
+	can describe static and dynamic behaviour in a common way
+
+
+
